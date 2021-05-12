@@ -60,7 +60,7 @@ body {
   --menu-z-index: 100;
 
   /* LINKS */
-  --space-links: 70px;
+  --space-links: 30px;
   --padding-links: 10px;
   --color-links: black;
   --color-links-hover: rgb(255, 177, 177);
@@ -107,6 +107,14 @@ body {
 }
 
 
+/* 
+1 - Aumentar distancia da logo pros links sem quebrar a visualização em telas menores que 1920x1080;
+2- O MENU ESQUERDO ESTÁ QUEBRANDO EM TELAS MENORES QUE 1920X1080 APÓS AUMENTAR DISTANCIA DOS LINKS OU LOGO;
+3- FOI NECESSÁRIO DIMINUIR TAMANHO DO INPUT PRA NÃO QUEBRAR EM TELAS MENOS QUE 1920X1080 - É POSSIVEL RESOLVER ADICIONANDO EM MEDIA PRA TELAS MENORES 
+QUE 1920X1080;
+*/
+
+
 
 .container__menu {
   margin: 0 auto;
@@ -136,7 +144,7 @@ body {
   height: var(--logo-height);
   transition: 0.3s ease-in-out;
   object-fit: contain;
-  margin-right: 70px;
+  margin-right: 60px;
 }
 
 .menu__wrapper {
@@ -194,7 +202,7 @@ a.menu__btn:hover {
 
 }
 
-
+/* menu direito*/
 
 .menu__complemento {
   display: flex;
@@ -207,7 +215,7 @@ a.menu__btn:hover {
   }
 
   .user {
-    margin-right: 20px;
+    margin-right: 15px;
   }
 
 }
@@ -223,20 +231,26 @@ a.menu__btn:hover {
     height: 20px;
     background: $cor-cinza-1;
     width: 2px;
-    margin-left: 20px;
+    margin-left: 15px;
     margin-right: 10px;
 
   }
 
 
   input {
-    padding: 10px 30px;
+    max-width: 300px;
+    min-width: 200px;
+    padding: 10px 20px;
+  }
 
+  ::-webkit-input-placeholder {
+    font-size: 0.875rem;
+    font-family: $font-opensans;
   }
 
   .lupa {
     position: absolute;
-    right: 15%;
+    right: 20%;
 
     img {
       width: 20px;
@@ -245,16 +259,30 @@ a.menu__btn:hover {
 }
 
 
+/*fim menu direito*/
+
 
 
 /* dropdown */
 .menu__dropdown {
   position: relative;
+  align-items: center;
+
+
+
+  ion-icon {
+    position: absolute;
+    top: 6px;
+    right: -10px;
+    color: $cor-laranja;
+
+  }
+
+
 }
 
 
 #dropdown__content {
-
   opacity: 0;
   position: absolute;
   display: flex;
