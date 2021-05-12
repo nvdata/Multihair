@@ -168,7 +168,7 @@ body {
   --drop-m-color: black;
 }
 
-.container {
+.container__menu {
   margin: 0 auto;
   max-width: var(--container-extra-large);
   padding: var(--container-padding);
@@ -194,12 +194,18 @@ body {
   height: var(--logo-height);
   transition: 0.3s ease-in-out;
   object-fit: contain;
+  margin-right: 70px;
 }
 
 .menu__wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.menu__principal {
+  display: flex;
+  align-items: center;
 }
 
 /* ul links desktop */
@@ -211,15 +217,15 @@ body {
 
 /*a  links  */
 .menu__links a {
-  color: var(--color-links);
-  font-size: var(--font-links);
+  color: #000;
+  font-size: 1.125rem;
   transition: color 0.4s ease;
-  font-weight: var(--weight-links);
+  font-weight: 400;
   padding: var(--padding-links);
 }
 
 .menu__links a:hover {
-  color: var(--color-links-hover);
+  color: #FF6C0E;
 }
 
 .menu__links li + li {
@@ -242,16 +248,42 @@ a.menu__btn:hover {
   background-color: var(--btn-bg-hover);
 }
 
+.menu__complemento {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu__complemento .cart,
+.menu__complemento .user {
+  width: 30px;
+}
+.menu__complemento .user {
+  margin-right: 20px;
+}
+
 .menu__buscar {
   position: relative;
+  display: flex;
+  align-items: center;
+}
+.menu__buscar::after {
+  content: "";
+  display: block;
+  height: 20px;
+  background: #D9D9D9;
+  width: 2px;
+  margin-left: 20px;
+  margin-right: 10px;
 }
 .menu__buscar input {
-  padding: 14px 30px;
+  padding: 10px 30px;
 }
 .menu__buscar .lupa {
   position: absolute;
-  right: 20px;
-  top: 12px;
+  right: 15%;
+}
+.menu__buscar .lupa img {
+  width: 20px;
 }
 
 /* dropdown */
@@ -279,7 +311,7 @@ a.menu__btn:hover {
 }
 
 #dropdown__content a:hover {
-  color: var(--drop-color-hover);
+  color: #FF6C0E;
 }
 
 .menu__dropdown:hover #dropdown__content {

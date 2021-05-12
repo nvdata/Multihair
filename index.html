@@ -29,14 +29,16 @@
             </div>
         </section>
         -->
+        
 
 
     
 
   <!--MENU DESKTOP-->
   <nav class="menu__desktop menu">
-        <div class="container">
+        <div class="container__menu">
             <div class="menu__wrapper">
+                <div class="menu__principal">
                 <a class="menu__logo" href="#">
                     <img src="./assets/img/logo.svg" alt="logo"></a>
 
@@ -64,10 +66,15 @@
                     <li><a href="#">Contato</a></li>
                     
                 </ul>
+            </div>
 
-                <div class="menu__buscar">
-                    <input type="search" id="search" name="search">
-                    <a class="lupa" href="#"><img src="./assets/img/MagnifyingGlass.svg"></a>
+                <div class="menu__complemento">
+                    <div class="menu__buscar">
+                        <input type="search" id="search" name="search">
+                        <a class="lupa" href="#"><img src="./assets/img/MagnifyingGlass.svg"></a>
+                    </div>
+                    <a class="user" href="#"><img src="./assets/img/User.svg"></a>
+                    <a class="cart" href="#"><img src="./assets/img/ShoppingCart.svg"></a>
                 </div>
 
             </div>
@@ -80,11 +87,11 @@
 
     <!-- MENU MOBILE ====================== -->
     <nav class="menu__mobile menu">
-        <div class="container">
+        <div class="container__menu">
             <div class="menu__mobile-wrapper">
 
                 <a href="#" class="menu__logo">
-                    <img src="https://i.ibb.co/fQRjHFS/Group-21.jpg" alt="logo">
+                    <img src="./assets/img/logo.svg" alt="logo"></a>
                 </a>
 
                 <div class="menu__icon">
@@ -117,7 +124,7 @@
         </div>
     </nav>
     <div class="fundo__black"></div>
-</main>
+    </main>
     <script>
         // menu preenchido 
         function menuPreenchido() {
