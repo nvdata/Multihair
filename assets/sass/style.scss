@@ -7,15 +7,19 @@
 @import "../sass/utilities/responsivo";
 @import "../sass/utilities/reset";
 @import "../sass/utilities/animation";
+@import "../sass/components/form__contato";
 
 
 @import "../sass/components/body"; //alterações no BODY
 @import "../sass/components/menu";
 
-
 // PÁGINAS
 .body__home {
-    @import "./pages/page__home";
+  @import "./pages/page__home";
+}
+
+.body__contato {
+  @import "./pages/page__contato";
 }
 
 

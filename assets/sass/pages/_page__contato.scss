@@ -1,0 +1,52 @@
+body {
+  background-color: $cor-laranja-bg !important;
+}
+
+.contato {
+  padding-top: 256px;
+}
+
+.contato__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+
+
+
+}
+
+.contatos__intro {
+
+  h1 {
+    font-size: rem(52);
+    font-weight: 700;
+    font-family: $font-boska;
+  }
+
+  h2 {
+    font-size: rem(24);
+    padding-top: 64px;
+    font-weight: 700;
+    font-size: $font-raleway;
+    margin-bottom: 30px;
+  }
+
+
+}
+
+.contatos__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 24px;
+
+  img {
+    margin-right: 16px;
+  }
+
+  span {
+    font-weight: 500;
+    color: #000;
+  }
+
+}
