@@ -1,0 +1,98 @@
+// ██╗   ██╗████████╗██╗██╗     ██╗████████╗ █████╗ ██████╗ ██╗ ██████╗ ███████╗
+// ██║   ██║╚══██╔══╝██║██║     ██║╚══██╔══╝██╔══██╗██╔══██╗██║██╔═══██╗██╔════╝
+// ██║   ██║   ██║   ██║██║     ██║   ██║   ███████║██████╔╝██║██║   ██║███████╗
+// ██║   ██║   ██║   ██║██║     ██║   ██║   ██╔══██║██╔══██╗██║██║   ██║╚════██║
+// ╚██████╔╝   ██║   ██║███████╗██║   ██║   ██║  ██║██║  ██║██║╚██████╔╝███████║
+//  ╚═════╝    ╚═╝   ╚═╝╚══════╝╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝ ╚═════╝ ╚══════╝
+
+
+@import "./clamp"; //clamp css
+@import "./scrollbars"; //scrollbar colorida
+
+
+
+//PX TO REM
+$browser-context: 16; // Default
+
+@function rem($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}rem;
+}
+
+
+
+//background
+@mixin bg-props-contain {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+@mixin bg-props-cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+// pseudo contain  
+@mixin pseudo($p:initial) {
+  content: "";
+  @include bg-props-contain;
+  display: block;
+  position: $p;
+  pointer-events: none;
+
+}
+
+//center eixo X
+@mixin center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+//flexbox 
+@mixin flex ($justificado:space-between, $alinhamento:center, $flow:row wrap) {
+  display: flex;
+  flex-flow: $flow;
+  justify-content: $justificado;
+  align-items: $alinhamento;
+}
+
+
+//underlne nos links
+@mixin underlineLink($cor:$cor-verde-1) {
+  position: relative;
+
+  &:hover {
+    &:after {
+      width: 100%;
+    }
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    width: 0;
+    position: absolute;
+    height: 3px;
+    background: $cor;
+    left: 0px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    bottom: -2px;
+  }
+}
+
+// @mixin font-face($font-name, $file-name, $weight: normal, $style: normal) { 
+//   @font-face {
+//     font-family: quote($font-name);
+//     src: url($file-name + '.eot');
+//     src: url($file-name + '.eot?#iefix')  format('embedded-opentype'),
+//          url($file-name + '.woff') format('woff'),
+//          url($file-name + '.ttf')  format('truetype'),
+//          url($file-name + '.svg##{$font-name}')  format('svg');
+//     font-weight: $weight;
+//     font-style: $style;
+//   }
+// }

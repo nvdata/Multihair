@@ -35,6 +35,7 @@ a {
 button {
   background: initial;
   border: initial;
+  -webkit-appearance: none;
 
   &:active {
     border-style: initial;
@@ -77,6 +78,13 @@ figure {
   margin-inline-end: 0;
 }
 
+
+
+input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 
 :focus {
   outline: 0px transparent !important;
