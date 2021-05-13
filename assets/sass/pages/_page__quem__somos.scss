@@ -1,0 +1,84 @@
+.contato__wrapper {
+  display: flex;
+}
+
+.sobre {
+  padding-top: 16vh;
+
+  h1 {
+    font-family: $font-boska;
+    font-size: rem(72);
+  }
+
+  p {
+    padding-top: 16px;
+    max-width: 416px;
+    font-size: rem(16);
+  }
+
+  h4 {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-weight: 700;
+    font-size: rem(24);
+  }
+
+  span {
+    font-weight: 500;
+    font-size: rem(16);
+  }
+
+
+}
+
+
+.text__intro-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  max-width: 500px;
+
+  img {
+    margin-right: 40px;
+  }
+
+  h3 {
+    font-size: rem(36);
+    font-weight: 700;
+  }
+}
+
+
+.sobre__item {
+  display: flex;
+  align-items: center;
+
+
+  h3 {
+    font-size: rem(24);
+    font-weight: bold;
+  }
+
+  p {
+    padding-top: 16px;
+    font-size: rem(16);
+  }
+
+  .sobre__historia {
+    margin-right: 40px;
+  }
+}
+
+// IMG INTRO 
+
+.sobre__intro-img {
+  display: flex;
+
+  img {
+    width: 500px;
+    height: 500px;
+  }
+
+}

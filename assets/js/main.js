@@ -20,6 +20,7 @@ const mediaQuebra = window.matchMedia('(max-width: 1024px)').matches
 // ★ PAGES ★ 
 const pageHome = new Dom().el("#page__home");
 const pageContato = new Dom().el("#page__contato");
+const pageSobre = new Dom().el("#page__quem__somos");
 
 
 if (pageHome) { // ★ HOME 
@@ -29,5 +30,9 @@ if (pageHome) { // ★ HOME
 
 if (pageContato) { // ★ Contato
     new Dom().bodyClass("body__contato");
+}
+
+if (pageSobre) { // ★ Quem somos
+    new Dom().bodyClass("body__quem__somos");
 }
 
