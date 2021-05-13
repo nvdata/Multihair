@@ -121,7 +121,6 @@
 
 /*a  links  */
 .menu__links a {
-  color: $cor-preto;
   font-size: 1.125rem;
   transition: color 0.4s ease;
   font-weight: 400;
@@ -129,7 +128,6 @@
 }
 
 .menu__links a:hover {
-  color: $cor-laranja;
 
 }
 
@@ -181,7 +179,6 @@ a.menu__btn:hover {
     content: "";
     display: block;
     height: 20px;
-    background: $cor-cinza-1;
     width: 2px;
     margin-left: 15px;
     margin-right: 10px;
@@ -197,7 +194,7 @@ a.menu__btn:hover {
 
   ::-webkit-input-placeholder {
     font-size: 0.875rem;
-    font-family: $font-opensans;
+    font-family: $font-raleway;
   }
 
   .lupa {
@@ -226,7 +223,6 @@ a.menu__btn:hover {
     position: absolute;
     top: 6px;
     right: -10px;
-    color: $cor-laranja;
 
   }
 
@@ -255,7 +251,6 @@ a.menu__btn:hover {
 }
 
 #dropdown__content a:hover {
-  color: $cor-laranja;
 }
 
 .menu__dropdown:hover #dropdown__content {
