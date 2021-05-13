@@ -1,5 +1,5 @@
-body {
-  background-color: $cor-laranja-bg !important;
+& {
+  background: $cor-laranja-bg;
 }
 
 .contato {
@@ -9,9 +9,6 @@ body {
 .contato__wrapper {
   display: flex;
   flex-wrap: wrap;
-
-
-
 
 }
 
