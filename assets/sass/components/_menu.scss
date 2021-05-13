@@ -477,8 +477,10 @@ a.menu__btn:hover {
 
 /* Small devices  */
 @media (max-width: 576px) {
-  .container {
-    max-width: var(--container-small);
+  .menu {
+    .container {
+      max-width: var(--container-small);
+    }
   }
 }
 
@@ -486,8 +488,10 @@ a.menu__btn:hover {
 
 /* Medium devices  */
 @media (max-width: 768px) {
-  .container {
-    max-width: var(--container-medium);
+  .menu {
+    .container {
+      max-width: var(--container-medium);
+    }
   }
 }
 
@@ -500,8 +504,11 @@ a.menu__btn:hover {
     display: none;
   }
 
-  .container {
-    max-width: var(--container-large);
+  .menu {
+
+    .container {
+      max-width: var(--container-large);
+    }
   }
 
   .menu__mobile {
