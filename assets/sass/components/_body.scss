@@ -1,0 +1,38 @@
+body {
+    // @include scrollbars(8px, $cor-1, rgb(238, 238, 238));
+
+    overflow-x: hidden;
+    transition: all 0.3s ease;
+    opacity: 0;
+
+    &.dcl {
+        opacity: 1;
+    }
+
+    font-family: $font-roboto;
+
+}
+
+html {
+    --font-base: 100%;
+    font-size: var(--font-base);
+    line-height: 145%;
+    scroll-behavior: smooth;
+}
+
+
+@media (max-width:1440px) {
+
+    html {
+        font-size: calc(var(--font-base) - 9.25%);
+    }
+
+}
+
+@media (max-width:980px) {
+
+    html {
+        font-size: calc(var(--font-base) - 12.5%);
+    }
+
+}

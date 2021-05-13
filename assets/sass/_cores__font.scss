@@ -1,31 +1,26 @@
 // COLORS
-$cor-preto-1: #333333;
-$cor-preto-2: #1b1b1b;
 
-$cor-cinza-1: #666666;
-$cor-cinza-2: #6d7d8b;
-$cor-cinza-3: #999999;
-
-$cor-verde-1: #01b533;
-$cor-verde-2: #4bff72;
-$cor-verde-3: #acf8a0;
-$cor-verde-4: #33f246;
-
-$cor-verde-claro-1: #f0feec;
-$cor-verde-claro-2: #eefeec;
-
-$cor-verde-pseudo-1: #12ff2a;
-
-$cor-branco-1: #fff;
 //
 
-//FONTES
-$font-roboto: "Roboto",
-sans-serif;
-$font-raleway: "Raleway",
-sans-serif;
 
 
 //variaveis do projeto
 $border-radius: 7px;
 $shadow: 2px 2px 3px rgba(215, 215, 215, 0.1);
+
+
+
+@font-face {
+    font-family: 'Boska';
+    src: url('../fonts/Boska-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+$font-raleway: "Raleway",
+sans-serif;
+//FONTES
+$font-boska: "Boska",
+sans-serif;
