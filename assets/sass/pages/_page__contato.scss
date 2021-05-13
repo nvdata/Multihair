@@ -1,0 +1,25 @@
+.contatos__intro {
+  margin-top: 200px;
+  h1 {
+    font-size: rem(52);
+    font-weight: 700;
+    font-family: $font-boska;
+  }
+
+  h2 {
+    font-size: rem(24);
+    padding-top: 83px;
+    font-weight: 700;
+    font-size: $font-raleway;
+    margin-bottom: 30px;
+  }
+
+}
+
+.contatos__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 24px;
+
+}
