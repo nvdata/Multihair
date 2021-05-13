@@ -1,15 +1,19 @@
-//@import "bootstrap__imports";
+@import "bootstrap__imports";
+@import "../sass/cores__font";
+@import "../sass/mixins"; //MIXINS
 
 // UTILIDADES
+@import "../sass/utilities/utilitarios";
 @import "../sass/utilities/responsivo";
 @import "../sass/utilities/reset";
-@import "../sass/utilities/_cores_fontes";
-
+@import "../sass/utilities/animation";
+@import "../sass/components/body"; //alterações no BODY
+// PÁGINAS
+@import "../sass/components/menu";
 
 
 // PÁGINAS
-@import "../sass/pages/menu";
-@import "../sass/pages/multihair__home";
+@import "./pages/page__home";
 
 
 
