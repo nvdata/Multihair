@@ -3,21 +3,41 @@
 }
 
 .contato {
-  padding-top: 150px;
+  padding-top: 16vh;
+
 }
 
 .contato__wrapper {
   display: flex;
   flex-wrap: wrap;
-  align-items: center
+  align-items: center;
+}
+
+.text__intro {
+  display: flex;
+  flex-direction: column;
+
+  @include d(m) {
+    align-items: center;
+  }
 }
 
 .contatos__intro {
+
 
   h1 {
     font-size: rem(52);
     font-weight: 700;
     font-family: $font-boska;
+
+    @include d(m) {
+      text-align: center;
+    }
+
+    @include d(s) {
+      margin-top: 5vh;
+      font-size: rem(36);
+    }
   }
 
   h2 {
@@ -26,6 +46,16 @@
     font-weight: 700;
     font-size: $font-raleway;
     margin-bottom: 30px;
+
+    @include d(m) {
+      text-align: center;
+    }
+
+    @include d(s) {
+
+      font-size: rem(18);
+
+    }
   }
 
 
@@ -36,6 +66,7 @@
   flex-wrap: wrap;
   align-items: center;
   margin-bottom: 24px;
+
 
   img {
     margin-right: 16px;
@@ -49,9 +80,6 @@
 }
 
 
-.formulario {
-  margin: 0 auto;
-}
 
 
 
@@ -60,18 +88,42 @@
 /* FORMULARIO ESTILO*/
 
 
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include d(m) {
+    margin-bottom: 40px;
+  }
+
+}
 
 .form {
+  align-self: center;
   position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  border-radius: 3px;
+  border-radius: 8px;
   padding: 80px 10px 40px 10px;
   background: white;
-  max-width: 500px;
+  width: 500px;
   margin-top: 60px;
+
+  @include d(m) {
+    margin-top: 40px;
+    padding: 60px 10px 30px 10px;
+    width: 450px;
+
+  }
+
+  @include d(s) {
+    margin-top: 40px;
+    width: 100%;
+    padding: 60px 20px 30px 20px;
+  }
 }
 
 
@@ -82,7 +134,7 @@
   margin-bottom: 60px;
 
   @include d(m) {
-    width: 270px;
+    width: 90%;
   }
 
   input {
@@ -100,11 +152,21 @@
     font-size: 16px;
     transition: .5s ease;
 
+    @include d(m) {
+      width: 100%;
+    }
+
+
+
 
     &::placeholder {
       color: $cor-cinza-4;
       font-size: rem(14);
       font-family: $font-raleway;
+
+      @include d(s) {
+        font-size: rem(12);
+      }
 
     }
   }
@@ -148,9 +210,7 @@
 }
 
 .textarea {
-  @include d(m) {
-    width: 270px;
-  }
+
 
   textarea {
     margin: 0px;
@@ -167,13 +227,17 @@
     max-height: 150px;
 
     @include d(m) {
-      width: 270px;
+      width: 100%
     }
 
     &::placeholder {
       font-size: rem(14);
       font-family: $font-raleway;
       color: $cor-cinza-4;
+
+      @include d(s) {
+        font-size: rem(12);
+      }
     }
 
 
