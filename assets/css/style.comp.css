@@ -36,6 +36,7 @@ a {
 button {
   background: initial;
   border: initial;
+  -webkit-appearance: none;
 }
 button:active {
   border-style: initial;
@@ -68,51 +69,13 @@ figure {
   margin-inline-end: 0;
 }
 
+input[type=submit] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
 :focus {
   outline: 0px transparent !important;
-}
-
-/* RESET BASICO */
-body,
-p,
-h1,
-h2,
-ul,
-li {
-  margin: 0px;
-  padding: 0px;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-  cursor: pointer;
-}
-
-*::after,
-*::before {
-  box-sizing: border-box;
-}
-
-* {
-  box-sizing: border-box;
-  text-rendering: optimizelegibility;
-  -webkit-font-smoothing: antialiased;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-}
-
-body {
-  background: #fcffec;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  height: 200vh;
 }
 
 /* VARIAVEIS */

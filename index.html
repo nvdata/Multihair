@@ -1,203 +1,115 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-v4-grid-only@1.0.0/dist/bootstrap-grid.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-v4-grid-only@1.0.0/dist/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="assets/css/style.comp.css">
-  <title>Multihair</title>
-</head>
-<body>
-    <main>
-        <!--
-        <section class="intro" id="intro">
-            <div class="container">
-                <div class="intro__wrapper">
-                    <div class="intro__laranja">
-                        <div class="intro__laranja-img">
-                            <img src="./assets/img/menina__bglaranja.svg">
-                        </div>
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/style.comp.css">
+    <title>Multihair</title>
+</head>
+
+<body>
+    <main class="page__home">
+
+
+
+        <!--MENU DESKTOP-->
+        <nav class="menu__desktop menu">
+            <div class="container__menu">
+                <div class="menu__wrapper">
+                    <div class="menu__principal">
+                        <a class="menu__logo" href="#">
+                            <img src="./assets/img/logo.svg" alt="logo"></a>
+
+                        <ul class="menu__links">
+
+                            <li class="menu__dropdown">
+                                <a href="#">Cabelo Sintético<ion-icon name="chevron-down-outline"></ion-icon></a>
+
+
+                                <div id="dropdown__content">
+                                    <a href="#">Item</a>
+                                    <a href="#">Item</a>
+
+                                </div>
+                            </li>
+                            <li class="menu__dropdown">
+                                <a href="#">Cabelo Sintético<ion-icon name="chevron-down-outline"></ion-icon></a>
+
+                                <div id="dropdown__content">
+                                    <a href="#">Item</a>
+                                    <a href="#">Item</a>
+
+                                </div>
+                            </li>
+                            <li><a href="#">Sobre nós</a></li>
+                            <li><a href="#">Contato</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="menu__complemento">
+                        <div class="menu__buscar">
+                            <form>
+                                <input type="search" id="search" name="search" placeholder="Buscar">
+
+                            </form>
+                            <a class="lupa" href="#"><img src="./assets/img/MagnifyingGlass.svg"></a>
+                        </div>
+                        <a class="user" href="#"><img src="./assets/img/User.svg"></a>
+                        <a class="cart" href="#"><img src="./assets/img/ShoppingCart.svg"></a>
+                    </div>
+
+                </div>
+            </div>
+
+        </nav>
+
+        <!-- MENU MOBILE ====================== -->
+        <nav class="menu__mobile menu">
+            <div class="container__menu">
+                <div class="menu__mobile-wrapper">
+
+                    <a href="#" class="menu__logo">
+                        <img src="./assets/img/logo.svg" alt="logo"></a>
+                    </a>
+
+                    <div class="menu__icon">
+                        <div class="menu__icon-click">
+                            <p>MENU</p>
+                            <div class="hamburguer"><i></i></div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-        -->
-        
 
+            <div class="atalhos">
+                <ul class="menu__links-mobile">
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li class="menu__dropdown-mobile">
+                        <a href="#">Dropdown</a>
 
-    
+                        <div class="menu__dropdown-container">
+                            <div id="dropdown__content-mobile">
+                                <a href="#">Item</a>
+                                <a href="#">Item</a>
 
-  <!--MENU DESKTOP-->
-  <nav class="menu__desktop menu">
-        <div class="container__menu">
-            <div class="menu__wrapper">
-                <div class="menu__principal">
-                <a class="menu__logo" href="#">
-                    <img src="./assets/img/logo.svg" alt="logo"></a>
-
-                <ul class="menu__links">
-
-                    <li class="menu__dropdown">
-                        <a href="#">Cabelo Sintético<ion-icon name="chevron-down-outline"></ion-icon></a>
-                        
-
-                        <div id="dropdown__content">
-                            <a href="#">Item</a>
-                            <a href="#">Item</a>
-
+                            </div>
                         </div>
                     </li>
-                    <li class="menu__dropdown">
-                        <a href="#">Cabelo Sintético<ion-icon name="chevron-down-outline"></ion-icon></a>
-
-                        <div id="dropdown__content">
-                            <a href="#">Item</a>
-                            <a href="#">Item</a>
-
-                        </div>
-                    </li>
-                    <li><a href="#">Sobre nós</a></li>
-                    <li><a href="#">Contato</a></li>
-                    
+                    <li><a class="menu__btn" href="#">Botao</a></li>
                 </ul>
             </div>
-
-                <div class="menu__complemento">
-                    <div class="menu__buscar">
-                        <form>
-                            <input type="search" id="search" name="search" placeholder="Buscar">
-
-                        </form>
-                        <a class="lupa" href="#"><img src="./assets/img/MagnifyingGlass.svg"></a>
-                    </div>
-                    <a class="user" href="#"><img src="./assets/img/User.svg"></a>
-                    <a class="cart" href="#"><img src="./assets/img/ShoppingCart.svg"></a>
-                </div>
-
-            </div>
-        </div>
-
-    </nav>
-
-    <!--fim menu desktop-->
-
-
-    <!-- MENU MOBILE ====================== -->
-    <nav class="menu__mobile menu">
-        <div class="container__menu">
-            <div class="menu__mobile-wrapper">
-
-                <a href="#" class="menu__logo">
-                    <img src="./assets/img/logo.svg" alt="logo"></a>
-                </a>
-
-                <div class="menu__icon">
-                    <div class="menu__icon-click">
-                         <p>MENU</p>
-                        <div class="hamburguer"><i></i></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="atalhos">
-            <ul class="menu__links-mobile">
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li class="menu__dropdown-mobile">
-                    <a href="#">Dropdown</a>
-
-                    <div class="menu__dropdown-container">
-                        <div id="dropdown__content-mobile">
-                            <a href="#">Item</a>
-                            <a href="#">Item</a>
-
-                        </div>
-                    </div>
-                </li>
-                <li><a class="menu__btn" href="#">Botao</a></li>
-            </ul>
-        </div>
-    </nav>
-    <div class="fundo__black"></div>
+        </nav>
+        <div class="fundo__black"></div>
     </main>
+    <script type="module" src="assets/js/main.js"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-    <script>
-        // menu preenchido 
-        function menuPreenchido() {
-            const menuFixo = document.querySelectorAll(".menu");
 
-            menuFixo.forEach((i) => {
-                if (window.pageYOffset >= 20) {
-                    document.body.classList.add("ativo__scroll");
-
-                } else if (window.pageYOffset < 50) {
-                    document.body.classList.remove("ativo__scroll");
-                }
-            });
-        }
-        menuPreenchido();
-
-
-        /* abre & fecha menu  */
-        const menuItem = document.querySelector(".menu__icon-click")
-        const linksMenu = document.querySelector(".atalhos")
-        const mediaQuery = window.matchMedia('(min-width: 992px)')
-
-        function menuMobile() {
-            if (!mediaQuery.matches && !document.body.classList.contains("menu__open")) {
-                document.body.classList.add("menu__open");
-
-            } else if (document.body.classList.contains("menu__open")) {
-
-                linksMenu.setAttribute(
-                    "style",
-                    "animation: voltaMenu 250ms both ease-out;"
-                );
-                setTimeout(() => {
-                    linksMenu.removeAttribute("style", "animation");
-                    document.body.classList.remove("menu__open");
-                }, 250);
-            }
-        }
-
-
-        /* FECHA MENU SE CLICAR PARTE PRETA */
-        function fechaMenuMobile(click) {
-            const partePreta = document.querySelector(".fundo__black")
-            if (document.body.classList.contains("menu__open") && click.target == partePreta) {
-                linksMenu.setAttribute(
-                    "style",
-                    "animation: voltaMenu 250ms both ease-out;"
-                );
-                setTimeout(() => {
-                    linksMenu.removeAttribute("style", "animation");
-                    document.body.classList.remove("menu__open");
-                }, 250);
-            }
-
-        }
-
-
-        // add classe DROP MOBILE 
-        const dropMobile = document.querySelector(".menu__dropdown-mobile")
-        dropMobile.addEventListener("click", function (event) {
-            event.preventDefault();
-            dropMobile.classList.toggle("abre")
-        })
-
-        //eventos
-        menuItem.addEventListener("click", menuMobile)
-        document.body.addEventListener("click", fechaMenuMobile)
-        window.addEventListener("scroll", menuPreenchido);
-    </script>
 </body>
+
 </html>
