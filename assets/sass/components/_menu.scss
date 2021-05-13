@@ -1,4 +1,3 @@
-
 /* VARIAVEIS */
 :root {
 
@@ -81,6 +80,7 @@
   position: var(--menu-position);
   width: 100%;
   z-index: var(--menu-z-index);
+  top: 0;
 }
 
 
@@ -127,9 +127,7 @@
   padding: var(--padding-links);
 }
 
-.menu__links a:hover {
-
-}
+.menu__links a:hover {}
 
 .menu__links li+li {
   margin-left: var(--space-links);
@@ -250,8 +248,7 @@ a.menu__btn:hover {
 
 }
 
-#dropdown__content a:hover {
-}
+#dropdown__content a:hover {}
 
 .menu__dropdown:hover #dropdown__content {
   animation: opacity .3s ease-in-out both;
