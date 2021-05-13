@@ -223,3 +223,33 @@
   }
 
 }
+
+@mixin titulosPrincipais($orna:true) {
+  font-family: $font-boska;
+  @include clamp("font-size", 32px, 4vw, 64px);
+  position: relative;
+
+
+  @if $orna {
+    &:after {
+      @include pseudo(absolute);
+      background-image:url("../img/orna/separador.svg");     
+      
+      
+    }
+  }
+}
+
+$component-name:"produtos";
+
+.#{$component-name} {
+  padding: 120px 0;
+
+  &__texto {
+    h1 {
+      @include titulosPrincipais;
+    }
+  }
+
+  &__card {}
+}
