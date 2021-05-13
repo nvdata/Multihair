@@ -18,10 +18,17 @@ menu();
 const mediaQuebra = window.matchMedia('(max-width: 1024px)').matches
 
 // ★ PAGES ★ 
-const pageHome = new Dom().el("#page__home")
+const pageHome = new Dom().el("#page__home");
+const pageContato = new Dom().el("#page__contato");
 
 
 if (pageHome) { // ★ HOME 
     new Dom().bodyClass("body__home")
 
 }
+
+if (pageHome) { // ★ HOME 
+    new Dom().bodyClass("body__contato")
+
+}
+
