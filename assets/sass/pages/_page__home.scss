@@ -233,7 +233,10 @@
   @if $orna {
     &:after {
       @include pseudo(absolute);
-      background-image:url("../img/orna/separador.svg");     
+      background-image:url("../img/orna/separador.svg");  
+      width: 200px;   
+      // @include clamp
+      height: 50px;
       
       
     }
