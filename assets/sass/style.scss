@@ -9,17 +9,18 @@
 @import "../sass/utilities/animation";
 
 
-
 @import "../sass/components/body"; //alterações no BODY
 @import "../sass/components/menu";
 
 // PÁGINAS
 .body__home {
-  @import "./pages/page__home";
+    @import "./pages/page__home";
 }
 
 .body__contato {
-  @import "./pages/page__contato";
+    @import "../sass/components/form__contato";
+    @import "./pages/page__contato";
+
 }
 
 
