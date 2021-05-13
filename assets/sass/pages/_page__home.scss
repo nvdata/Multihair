@@ -1,4 +1,224 @@
 .intro {
-  margin-top: 140px;
+  height: 100vh;
+  min-height: 600px;
+  background: $degrade-radial;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  >.container {
+    height: 100%;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__text {
+    h1 {
+      font-family: $font-boska;
+      font-size: 72px;
+      @include clamp("font-size", 42px, 5vw, 82px);
+      font-weight: 700;
+      line-height: 112%;
+
+      @include d(s) {
+        // font-size: 20px;
+      }
+    }
+
+    p {
+      font-weight: 500;
+      line-height: 140%;
+      margin-top: 25px;
+      @include clamp("font-size", 18px, 1.5vw, 22px)
+    }
+  }
 }
 
+@media(max-width:1100px) {
+  .intro {
+    &__text {
+      max-width: 500px;
+
+      h1 {
+        @include d(ss) {
+          font-size: 36px;
+        }
+      }
+
+    }
+  }
+}
+
+//intro ornamentos
+.orna {
+  pointer-events: none;
+  position: absolute;
+}
+
+.intro {
+  .orna {
+    &__1 {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: auto;
+      height: 100vh;
+
+      @include d(m) {
+        right: -20vw;
+        height: 110vh;
+        bottom: -34vh;
+        top: initial;
+      }
+
+      @include d(s) {
+        bottom: -46vh;
+      }
+    }
+
+    &__2 {
+      position: absolute;
+      left: 0;
+      top: 60px;
+      width: 200px;
+      height: 200px;
+
+      @include d(s) {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  }
+}
+
+@media (max-width:1439px) {
+
+  .intro {
+    .orna {
+      &__1 {
+        right: -20vw;
+        height: 110vh;
+
+      }
+    }
+  }
+
+}
+
+$cor-vermelho-1:rgba(242, 64, 64, 0.38);
+$cor-cinza-1:#525151;
+$cor-preto-3:#212121;
+$cor-preto-4:rgba(33, 33, 33, 0.8);
+
+$cor-laranja-2:#ff7a00;
+.btn__container {
+  width: 100%;
+  display: inline-flex;
+
+  .btn {
+    flex-grow: 0;
+    width: 240px;
+    font-weight: 600;
+    height: 52px;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 20px;
+    background: $cor-vermelho-1;
+    color: white;
+    border-radius: 4px;
+    justify-content: center;
+    margin-top: 20px;
+    font-feature-settings: 'pnum'on, 'lnum'on;
+    letter-spacing: 1px;
+    transition: background .3s ease;
+
+    ion-icon {
+      display: none;
+    }
+
+    &:hover {
+      background: rgba(242, 64, 64, 0.7);
+    }
+
+    @include d(s) {
+      @include center;
+      width: 100%;
+    }
+  }
+
+}
+
+.cabelos {
+  height: 400px;
+  display: flex;
+
+  >div {
+    width: 50%;
+
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__naturais {
+    height: 100%;
+    @include bg-props-cover;
+    background-image: url("../img/naturais.jpg");
+    background-position: top;
+
+    >.container {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      max-width: calc(1400px / 2)
+    }
+
+    .orna__1 {
+      position: absolute;
+      bottom: 0;
+      left: -10px;
+      z-index: -2;
+    }
+
+  }
+
+  &__sinteticos {
+    height: 100%;
+
+    >.container {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      max-width: calc(1400px / 2)
+    }
+  }
+
+  &__text {
+    h2 {
+      font-family: $font-boska;
+      color: $cor-preto-3;
+      font-size: 42px;
+      max-width: 200px;
+      margin-bottom: 30px;
+      line-height: 110%;
+    }
+
+    p {
+      font-weight: 600;
+      max-width: 250px;
+      margin-bottom: 30px;
+      line-height: 140%;
+      color: $cor-preto-4;
+    }
+  }
+  .btn__container{
+    .btn{
+      background: initial;
+      border: 1px solid $cor-laranja-2;
+    }
+  }
+
+}
