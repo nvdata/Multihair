@@ -134,7 +134,7 @@ $cor-laranja-2:#ff7a00;
     margin-top: 20px;
     font-feature-settings: 'pnum'on, 'lnum'on;
     letter-spacing: 1px;
-    transition: background .3s ease;
+    transition: background .3s ease, color .3s ease;
 
     ion-icon {
       display: none;
@@ -187,7 +187,10 @@ $cor-laranja-2:#ff7a00;
 
   &__sinteticos {
     height: 100%;
-
+    @include bg-props-cover;
+    background-image: url("../img/sinteticos.png");
+    background-position: top;
+    background-color: #ffab76;
     >.container {
       height: 100%;
       display: flex;
@@ -218,6 +221,12 @@ $cor-laranja-2:#ff7a00;
     .btn{
       background: initial;
       border: 1px solid $cor-laranja-2;
+      color: $cor-preto-3;
+      font-weight: 700;
+      &:hover{
+        background: $cor-laranja-2;
+        color: white;
+      }
     }
   }
 
