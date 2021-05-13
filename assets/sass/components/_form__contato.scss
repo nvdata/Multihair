@@ -11,7 +11,7 @@ $cor-4:$cor-verde-1;
   flex-direction: column;
   align-items: center;
   border-radius: 3px;
-  padding: 64px 80px;
+  padding: 64px 40px;
   max-width: 560px;
   background: #eee;
 }
@@ -21,7 +21,7 @@ $cor-4:$cor-verde-1;
   position: relative;
   width: 400px;
   height: 46px;
-  margin-bottom: 45px;
+  margin-bottom: 60px;
 
   @include d(m) {
     width: 270px;
@@ -44,9 +44,10 @@ $cor-4:$cor-verde-1;
 
 
     &::placeholder {
-      color: #999999;
-      font-size: rem(16);
+      color: $cor-cinza-4;
+      font-size: rem(14);
       font-family: $font-raleway;
+
     }
   }
 
@@ -69,9 +70,7 @@ $cor-4:$cor-verde-1;
   input:valid,
   textarea:focus,
   textarea:valid {
-    border: 1px solid $cor-verde-1 !important;
-
-
+    border: 1px solid $cor-preto-2 !important;
 
   }
 
@@ -90,7 +89,7 @@ $cor-4:$cor-verde-1;
   margin-bottom: 10px;
 }
 
-.textarea__container {
+.textarea {
   @include d(m) {
     width: 270px;
   }
@@ -111,6 +110,14 @@ $cor-4:$cor-verde-1;
     @include d(m) {
       width: 270px;
     }
+
+    &::placeholder {
+      font-size: rem(14);
+      font-family: $font-raleway;
+      color: $cor-cinza-4;
+    }
+
+
 
   }
 
@@ -154,14 +161,14 @@ $cor-4:$cor-verde-1;
     display: inline-block;
     font-weight: 300;
     font-size: rem(14);
-    color: #151617;
+    color: $cor-preto-2;
   }
 }
 
 .btn__container {
   @include botaoIsentei;
   width: 100%;
-  justify-content: flex-start;
+  justify-content: flex-end;
 
   .btn {
     margin-right: 0;

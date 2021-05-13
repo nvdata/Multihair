@@ -28,8 +28,8 @@
   display: inline-flex;
 
   .btn {
-    background: $bg;
-    color: $cor;
+    background: $cor-preto-1;
+    color: #fff;
     flex-grow: 0;
     @include center;
     margin-top: 20px;
