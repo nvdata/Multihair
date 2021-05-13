@@ -158,22 +158,3 @@ $cor-4:$cor-verde-1;
   }
 }
 
-.btn__container {
-  @include botaoIsentei;
-  width: 100%;
-  justify-content: flex-start;
-
-  .btn {
-    margin-right: 0;
-    margin-left: 0;
-
-    @include d(m) {
-      width: 130px;
-      height: 40px;
-      justify-content: center;
-      margin: 0 auto;
-      margin-top: 20px;
-    }
-  }
-
-}

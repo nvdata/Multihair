@@ -23,50 +23,41 @@
   }
 }
 
-
-@mixin botaoIsentei($cor:white, $bg:$cor-verde-1) {
+@mixin botaoMult {
+  width: 100%;
   display: inline-flex;
 
   .btn {
-    background: $bg;
-    color: $cor;
     flex-grow: 0;
-    @include center;
-    margin-top: 20px;
-    padding: 10px 30px;
-    border-radius: $border-radius;
-    transition: transform .3s ease, box-shadow .3s ease, background .3s ease;
-    font-size: rem(16);
+    width: 240px;
+    font-weight: 600;
+    height: 52px;
     display: inline-flex;
     align-items: center;
-    text-align: center;
-    cursor: pointer;
-
-    @include d(m) {
-      max-width: 250px;
-      flex-wrap: nowrap;
-      text-align: center;
-      padding: 6px 20px
-    }
+    padding: 0 20px;
+    background: $cor-vermelho-1;
+    color: white;
+    border-radius: 4px;
+    justify-content: center;
+    margin-top: 20px;
+    font-feature-settings: 'pnum'on, 'lnum'on;
+    letter-spacing: 1px;
+    transition: background .3s ease, color .3s ease;
 
     ion-icon {
-      margin-left: 5px;
-      vertical-align: middle;
-      transition: all .3s ease;
-
-      @include d(m) {
-        margin-left: 10px;
-        font-size: rem(28);
-      }
-
+      display: none;
     }
 
     &:hover {
-      transform: translateY(-2px);
-      box-shadow: 2px 3px 20px #01b5345b;
+      background: rgba(242, 64, 64, 0.7);
+    }
 
+    @include d(s) {
+      @include center;
+      width: 100%;
     }
   }
+
 }
 
 @mixin setaBotao {

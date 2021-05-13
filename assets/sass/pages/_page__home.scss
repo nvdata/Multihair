@@ -109,52 +109,18 @@
 
 }
 
-$cor-vermelho-1:rgba(242, 64, 64, 0.38);
-$cor-cinza-1:#525151;
-$cor-preto-3:#212121;
-$cor-preto-4:rgba(33, 33, 33, 0.8);
 
-$cor-laranja-2:#ff7a00;
 .btn__container {
-  width: 100%;
-  display: inline-flex;
-
-  .btn {
-    flex-grow: 0;
-    width: 240px;
-    font-weight: 600;
-    height: 52px;
-    display: inline-flex;
-    align-items: center;
-    padding: 0 20px;
-    background: $cor-vermelho-1;
-    color: white;
-    border-radius: 4px;
-    justify-content: center;
-    margin-top: 20px;
-    font-feature-settings: 'pnum'on, 'lnum'on;
-    letter-spacing: 1px;
-    transition: background .3s ease, color .3s ease;
-
-    ion-icon {
-      display: none;
-    }
-
-    &:hover {
-      background: rgba(242, 64, 64, 0.7);
-    }
-
-    @include d(s) {
-      @include center;
-      width: 100%;
-    }
-  }
-
+  @include botaoMult();
 }
 
 .cabelos {
   height: 400px;
   display: flex;
+
+  @include d(m) {
+    flex-direction: column;
+  }
 
   >div {
     width: 50%;
@@ -187,10 +153,11 @@ $cor-laranja-2:#ff7a00;
 
   &__sinteticos {
     height: 100%;
-    @include bg-props-cover;
+    @include bg-props-contain;
     background-image: url("../img/sinteticos.png");
-    background-position: top;
+    background-position: right;
     background-color: #ffab76;
+
     >.container {
       height: 100%;
       display: flex;
@@ -217,13 +184,15 @@ $cor-laranja-2:#ff7a00;
       color: $cor-preto-4;
     }
   }
-  .btn__container{
-    .btn{
+
+  .btn__container {
+    .btn {
       background: initial;
       border: 1px solid $cor-laranja-2;
       color: $cor-preto-3;
       font-weight: 700;
-      &:hover{
+
+      &:hover {
         background: $cor-laranja-2;
         color: white;
       }
