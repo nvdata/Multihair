@@ -3,7 +3,7 @@
 
     // SASS COMPILE ============================================
     "liveSassCompile.settings.formats": [{
-            "format": "expanded", //compressed or expanded 
+            "format": "compressed", //compressed or expanded 
             "extensionName": ".comp.css",
             "savePath": "/assets/css" //diretorio para salvar o arquivo .css
         },

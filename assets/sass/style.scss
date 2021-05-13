@@ -13,7 +13,9 @@
 
 
 // PÁGINAS
-@import "./pages/page__home";
+.body__home {
+    @import "./pages/page__home";
+}
 
 
 
