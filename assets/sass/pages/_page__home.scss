@@ -120,6 +120,7 @@
 
   @include d(m) {
     flex-direction: column;
+    height: auto;
   }
 
   >div {
@@ -127,6 +128,11 @@
 
     position: relative;
     overflow: hidden;
+
+    @include d(m) {
+      width: 100%;
+      padding: 30px 0;
+    }
   }
 
   &__naturais {
@@ -158,6 +164,13 @@
     background-position: right;
     background-color: #ffab76;
 
+    @include d(s) {
+      background-image: url("../img/sinteticos-2.png") !important;
+      background-position: bottom;
+      background-position-x: 50px;
+
+    }
+
     >.container {
       height: 100%;
       display: flex;
@@ -174,6 +187,11 @@
       max-width: 200px;
       margin-bottom: 30px;
       line-height: 110%;
+
+      @include d(m) {
+        margin-bottom: 20px;
+
+      }
     }
 
     p {
@@ -182,6 +200,11 @@
       margin-bottom: 30px;
       line-height: 140%;
       color: $cor-preto-4;
+
+      @include d(m) {
+        margin-bottom: 20px;
+
+      }
     }
   }
 
