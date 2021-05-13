@@ -27,8 +27,7 @@ if (pageHome) { // ★ HOME
 
 }
 
-if (pageHome) { // ★ HOME 
-    new Dom().bodyClass("body__contato")
-
+if (pageContato) { // ★ Contato
+    new Dom().bodyClass("body__contato");
 }
 
