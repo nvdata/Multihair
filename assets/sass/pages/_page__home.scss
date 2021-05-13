@@ -224,24 +224,7 @@
 
 }
 
-@mixin titulosPrincipais($orna:true) {
-  font-family: $font-boska;
-  @include clamp("font-size", 32px, 4vw, 64px);
-  position: relative;
 
-
-  @if $orna {
-    &:after {
-      @include pseudo(absolute);
-      background-image:url("../img/orna/separador.svg");  
-      width: 200px;   
-      // @include clamp
-      height: 50px;
-      
-      
-    }
-  }
-}
 
 $component-name:"produtos";
 
@@ -254,5 +237,51 @@ $component-name:"produtos";
     }
   }
 
-  &__card {}
+  &__wrapper {
+    display: grid;
+    margin-top: 80px;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 380px));
+    gap: 30px;
+    justify-content: center;
+
+  }
+
+  &__card {
+    background: rgb(231, 231, 255);
+
+    .img__container {
+      position: relative;
+      height: 360px;
+      cursor: zoom-in;
+
+      &:hover {
+        img:not([role="presentation"]) {
+          display: none !important;
+        }
+      }
+
+      img {
+        object-fit: contain;
+        @include size(100%);
+        position: absolute;
+
+
+      }
+    }
+
+    .text__container {
+      padding: 0 20px;
+
+    }
+
+    //titulo do card
+    a.#{$component-name}__nome {
+      margin: 20px 0;
+      display: inline-block;
+      font-weight: medium;
+
+    }
+
+
+  }
 }
