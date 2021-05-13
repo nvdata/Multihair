@@ -6,6 +6,8 @@
   font-family: $font-boska;
   @include clamp("font-size", 32px, 4vw, 64px);
   position: relative;
+  color: $cor-preto-3;
+  ;
 
   @if $orna {
     &:after {

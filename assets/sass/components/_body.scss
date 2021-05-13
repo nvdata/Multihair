@@ -5,7 +5,7 @@ body {
     transition: all 0.3s ease;
     opacity: 0;
 
-
+    font-feature-settings: 'pnum'on, 'lnum'on;
     &.dcl {
         opacity: 1;
     }
