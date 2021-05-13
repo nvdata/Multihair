@@ -2,24 +2,21 @@
 @import "./utilities/clamp"; //  CLAMP
 
 
+@mixin titulosPrincipais($orna:true) {
+  font-family: $font-boska;
+  @include clamp("font-size", 32px, 4vw, 64px);
+  position: relative;
+
+  @if $orna {
+    &:after {
+      @include pseudo(absolute);
+      background-image: url("../img/orna/separador.svg");
+      // width: 200px;   
+      @include clamp("width", 100px, 14vw, 200px);
+      height: 50px;
 
 
-//text intro
-
-@mixin textIntro {
-  text-align: center;
-  line-height: 145%;
-  color: $cor-preto-1;
-  letter-spacing: -0.03em;
-  font-size: rem(48);
-  font-weight: bold;
-
-  @include d(m) {
-    font-size: rem(28);
-  }
-
-  @include d(s) {
-    font-size: calc(22px + 0.2rem);
+    }
   }
 }
 
@@ -59,6 +56,26 @@
   }
 
 }
+
+//text intro
+
+// @mixin textIntro {
+//   text-align: center;
+//   line-height: 145%;
+//   color: $cor-preto-1;
+//   letter-spacing: -0.03em;
+//   font-size: rem(48);
+//   font-weight: bold;
+
+//   @include d(m) {
+//     font-size: rem(28);
+//   }
+
+//   @include d(s) {
+//     font-size: calc(22px + 0.2rem);
+//   }
+// }
+
 
 @mixin setaBotao {
   position: relative;
