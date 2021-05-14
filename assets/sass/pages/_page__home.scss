@@ -3,11 +3,12 @@
 }
 
 @import "../components/cards";
+$radial-claro:readial-gradient(90% 97.11% at 90% 79.52%, #FFE1C2 0%, #FFFFFF 100%);
 
 .intro {
   height: 100vh;
   min-height: 600px;
-  background: $degrade-radial;
+  background: $radial-claro;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -121,6 +122,19 @@
 //pega botoes geral da home
 .btn__container {
   @include botaoMult();
+}
+
+.btn__container {
+  .btn {
+    background: $cor-laranja !important;
+    color: white !important;
+    transition: background .3s ease, box-shadow .3s ease;
+
+    &:hover {
+      box-shadow: 2px 2px 15px #ff7a00ad;
+
+    }
+  }
 }
 
 
@@ -477,23 +491,25 @@ $component-name:"produtos";
 
   background: rgba(255, 255, 255, 0.946);
   width: 97%;
-  height: 1200px;
   margin-left: auto;
   margin-right: auto;
 
   &:after {
     @include pseudo(absolute);
-    background-image: url("../img/sobre-orna.svg");
+    background-image: url("../img/sobre-orna-2.svg");
     left: -90px;
     top: 0;
     width: 500px;
-    height: auto;
+    height: 700px;
     z-index: 1;
+    opacity: .7;
   }
+
 
 
 }
 
+//sobre dentor do footer
 .sobre {
   &__wrapper {
     display: flex;
@@ -516,75 +532,85 @@ $component-name:"produtos";
       margin-bottom: 20px;
       line-height: 145%;
       letter-spacing: .3px;
+      font-weight: 500;
 
     }
   }
 
+  .btn {
+    z-index: 2;
+  }
+
+  p,
+  .btn {
+    margin-left: 80px;
+  }
+
+
 
 }
 
+@media (max-width:1320px) {
+
+  .sobre {
+
+    p,
+    .btn {
+      margin-left: 0px;
+    }
+  }
+}
+
+.fundo__laranja {
+  .space {
+    width: 95%;
+    margin: 0 auto;
+    display: block;
+    border: initial;
+    background-color: rgba(0, 0, 0, .1);
+    height: 1px;
+    margin-top: 120px;
+  }
+}
+
+
+
+.news {
+  background: white;
+  padding: 20px 20px;
+  border: 1px solid rgba(208, 126, 126, 0.1);
+  border-radius: 8px;
+  margin-top: 40px;
+
+  &__wrapper {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 120px;
+    gap: 15px;
+
+    >p {
+      font-weight: bold;
+    }
+    >input{
+      padding: 12px 20px;
+      border: 1px solid $cor-cinza-1;
+      border-radius: 4px;
+    }
+  }
+
+  .btn__container {
+    width: 120px;
+    margin: initial;
+
+    .btn {
+      margin: initial;
+    }
+  }
+  
+}
 
 
 
 
 // /AJUSTES
-&.tema2 {
-  .intro {
-    background: radial-gradient(90% 97.11% at 90% 79.52%, #FFE1C2 0%, #FFFFFF 100%);
-  }
-
-  .intro {
-    .btn {
-      background: #ff7a00;
-      transition: background .3s ease, box-shadow .3s ease;
-
-      &:hover {
-        box-shadow: 2px 2px 15px #ff7a00ad;
-        background: #ff7a00;
-      }
-    }
-  }
-
-
-  .menu__logo img {
-    transition: transform .4s ease-out;
-  }
-
-  &.ativo__scroll {
-    .menu {
-      padding: 15px !important;
-      // height: 70px !important;
-
-    }
-
-    .menu__logo img {
-      // transform: scale(.9) !important;
-      height: 50px;
-    }
-  }
-
-  .menu__desktop {
-    // top: 20px !important;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, .03);
-    // width: 99%;
-    // left: 0;
-    // right: 0;
-    // @include center;
-    // border-radius: 200px;
-  }
-
-  .fundo__laranja {}
-
-  .btn__container {
-    .btn {
-      background: $cor-laranja !important;
-      color: white !important;
-      transition: background .3s ease, box-shadow .3s ease;
-
-      &:hover {
-        box-shadow: 2px 2px 15px #ff7a00ad;
-
-      }
-    }
-  }
-}
+&.tema2 {}
