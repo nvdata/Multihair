@@ -145,15 +145,9 @@
                         <a class="user" href="#"><img src="./assets/img/User.svg"></a>
                         <div class="cart">
                             <a class="cart-img" href="#"><img src="./assets/img/ShoppingCart.svg"></a>
-<<<<<<< HEAD
-                            <div class="hoverCart__wrapper ativo">
-                               
-                                 <div class="hoverCart__item">
-=======
                             <div class="hoverCart__wrapper">
 
                                 <div class="hoverCart__item">
->>>>>>> 02af190fe7064a5c68e19c53427e553df442e660
                                     <div class="hoverCart__img">
                                         <img src="./assets/img/adicionado.jpg">
                                     </div>
@@ -164,11 +158,7 @@
                                     </div>  
                                 </div>
                                 
-<<<<<<< HEAD
                                 <a href="#">Ver Carrinho</a>
-=======
-                                <p>Ver Carrinho</p>
->>>>>>> 02af190fe7064a5c68e19c53427e553df442e660
                             </div>
                         </div>
 
@@ -229,9 +219,9 @@
 
 <script>
     const carrinhoMenu = document.querySelector('.cart-img');
-    const  carrinho = document.querySelector('.hoverCart__wrapper')
+    
     carrinhoMenu.addEventListener('click', function(){
-        carrinho.classList.toggle('ativo');
+        document.body.classList.toggle('popup__open');
         
     });
 </script>

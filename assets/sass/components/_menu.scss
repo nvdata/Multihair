@@ -65,6 +65,14 @@
 
 
 
+.popup__open {
+
+  .hoverCart__wrapper {
+    display: block !important;
+  }
+}
+
+
 
 
 .container__menu {
@@ -172,11 +180,8 @@ a.menu__btn:hover {
   .cart {
     position: relative;
 
-    .ativo {
-      display: none;
-    }
-
     .hoverCart__wrapper {
+      display: none;
       background: #ffff;
       flex-direction: column;
       position: absolute;
