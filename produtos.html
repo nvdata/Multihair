@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.comp.css">
-    <!-- <link rel="stylesheet" href="assets/css/swiper.css"> -->
+    <link rel="stylesheet" href="assets/css/swiper.css">
 
     <title>Multihair</title>
 
@@ -22,8 +22,22 @@
 
         <div class="intro" id="intro">
             <div class="container">
+                <div class="intro__wrapper">
+                    <h1>Novos Produtos</h1>
+                    
+                    <form action="POST" class="select__container">
+                        <select name="filtro" id="filtro" data-custom-properties="null" data-deletable>
+                            <option value="#">banana</option>
+                        </select>
+                    </form>
 
+                </div>
             </div>
+        </div>
+
+        <div class="lista">
+
+
         </div>
 
 
@@ -152,18 +166,32 @@
     <script type="text/javascript" src="assets/js/jquery.zoom.min.js"></script>
 
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
 
     <script>
-        //zoom img cards
-        const quebra = window.matchMedia('(max-width: 1024px)').matches
-        if (!quebra) {
-            $(document).ready(function () {
-                $('.img__container img')
-                    .css('display', 'block')
-                    .parent()
-                    .zoom();
-            });
-        }
+        // choices
+
+        // const element = document.querySelector('#filtro');
+
+        // new Choices(element, {
+
+        //     addItemFilter: (value) => {
+        //         return ['orange', 'apple', 'banana'].includes(value);
+        //     }
+
+        // });
+
+
+        // //zoom img cards
+        // const quebra = window.matchMedia('(max-width: 1024px)').matches
+        // if (!quebra) {
+        //     $(document).ready(function () {
+        //         $('.img__container img')
+        //             .css('display', 'block')
+        //             .parent()
+        //             .zoom();
+        //     });
+        // }
     </script>
 
 </body>

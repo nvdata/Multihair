@@ -1,0 +1,37 @@
+.intro {
+    margin-top: 140px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+            @include titulosPrincipais(false);
+        }
+    }
+
+    .select__container {
+        position: relative;
+        width: max-content;
+        height: max-content;
+
+        &:after {
+            @include pseudo(absolute);
+            background-image: url("../img/CaretDown.svg");
+            // @include size()
+        }
+
+        #filtro {
+            appearance: none;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+
+    }
+}
