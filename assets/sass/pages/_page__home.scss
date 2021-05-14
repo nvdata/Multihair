@@ -231,7 +231,6 @@
 
   .btn__container {
     .btn {
-      background: initial;
       border: 1px solid $cor-laranja-2;
       color: $cor-preto-3;
       font-weight: 700;
@@ -281,9 +280,9 @@ $component-name:"produtos";
     .btn {
       @include center;
       border: 1px solid $cor-laranja;
-      color: #000;
+      // color: #000;
       font-weight: 600;
-      background: initial;
+      // background: initial;
 
       &:hover {
         background: $cor-laranja;
@@ -492,16 +491,7 @@ $component-name:"produtos";
     z-index: 1;
   }
 
-  .btn {
-    background: $cor-laranja !important;
-    color: white !important;
-    transition: background .3s ease, box-shadow .3s ease;
 
-    &:hover {
-      box-shadow: 2px 2px 15px #ff7a00ad;
-
-    }
-  }
 }
 
 .sobre {
@@ -585,5 +575,16 @@ $component-name:"produtos";
 
   .fundo__laranja {}
 
+  .btn__container {
+    .btn {
+      background: $cor-laranja !important;
+      color: white !important;
+      transition: background .3s ease, box-shadow .3s ease;
 
+      &:hover {
+        box-shadow: 2px 2px 15px #ff7a00ad;
+
+      }
+    }
+  }
 }
