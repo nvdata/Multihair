@@ -600,6 +600,7 @@
             <img src="assets/img/orna/orna-5.svg" alt="ornamento" class="orna__1 orna">
 
         </section>
+
         <section class="depo" id="depo">
             <div class="container">
                 <div class="depo__texto">
@@ -747,6 +748,37 @@
 
         </section>
 
+        <section class="fundo__laranja">
+
+            <section class="sobre">
+                <div class="container">
+                    <div class="sobre__wrapper">
+                        <div class="col-lg-7 sobre__texto">
+                            <h1>Sobre Nós</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas magna enim magna
+                                fermentum est orci. Vel nisl feugiat volutpat amet. Vehicula et est sem leo tincidunt
+                                dictum in viverra. Nunc a fringilla nulla turpis vitae. Vitae egestas purus venenatis
+                                donec. Malesuada interdum.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas magna enim magna
+                                fermentum est orci. Vel nisl feugiat volutpat amet. Vehicula et est sem leo tincidunt
+                                dictum in viverra. Nunc a fringilla nulla turpis vitae. Vitae egestas purus venenatis
+                                donec. Malesuada interdum.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas magna enim magna
+                                fermentum est orci. Vel nisl feugiat volutpat amet. Vehicula et est sem leo tincidunt
+                                dictum in viverra. Nunc a fringilla nulla turpis vitae. Vitae egestas purus venenatis
+                                donec. Malesuada interdum.</p>
+                            <div class="btn__container">
+                                <a href="#" class="btn">Ler mais</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 sobre__img">
+                            <img src="assets/img/foto__cabelos.jpg" alt="cabelos">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </section>
 
         <!--MENU DESKTOP-->
         <nav class="menu__desktop menu">
@@ -759,7 +791,10 @@
                         <ul class="menu__links">
 
                             <li class="menu__dropdown">
-                                <a href="#">Cabelo Sintético<ion-icon name="chevron-down-outline"></ion-icon></a>
+
+                                <a href="#">Categorias
+                                    <ion-icon name="chevron-down-outline"></ion-icon>
+                                </a>
 
 
                                 <div id="dropdown__content">
@@ -768,15 +803,7 @@
 
                                 </div>
                             </li>
-                            <li class="menu__dropdown">
-                                <a href="#">Cabelo Sintético<ion-icon name="chevron-down-outline"></ion-icon></a>
 
-                                <div id="dropdown__content">
-                                    <a href="#">Item</a>
-                                    <a href="#">Item</a>
-
-                                </div>
-                            </li>
                             <li><a href="#">Sobre nós</a></li>
                             <li><a href="#">Contato</a></li>
 
@@ -838,8 +865,36 @@
                 </ul>
             </div>
         </nav>
+
         <div class="fundo__black"></div>
+
+
     </main>
+    <!-- fim da main -->
+
+    <i id="theme2" onclick="change()"></i>
+
+    <style>
+        #theme2 {
+            width: 40px;
+            height: 40px;
+            position: fixed;
+            bottom: 5vh;
+            right: 5vh;
+            background: burlywood;
+            display: block;
+            z-index: 9999;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    </style>
+
+    <script>
+        function change() {
+            document.body.classList.toggle("tema2")
+        }
+    </script>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="module" src="assets/js/main.js"></script>
@@ -849,7 +904,7 @@
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 
     <script>
-        //zoom img
+        //zoom img cards
         const quebra = window.matchMedia('(max-width: 1024px)').matches
         if (!quebra) {
             $(document).ready(function () {

@@ -1,5 +1,6 @@
 @mixin cards {
 
+    //grid
     &__wrapper {
         display: grid;
         margin-top: 80px;
@@ -36,6 +37,7 @@
                 height: 230px;
             }
 
+            //plugin de zoom display none
             &:hover {
                 img:not([role="presentation"]) {
                     display: none !important;
@@ -79,6 +81,7 @@
             }
         }
 
+        //wrapper preco e call
         .#{$component-name}__desc {
             display: flex;
             align-items: center;
@@ -90,7 +93,7 @@
                 margin-bottom: 20px;
             }
 
-            //preco e desconto
+            //preco e desconto div
             .#{$component-name}__desc-preco {
                 margin-right: auto;
             }
