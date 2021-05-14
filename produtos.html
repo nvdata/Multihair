@@ -327,22 +327,80 @@
                         <li class="seta"><img src="assets/img/right-arow.svg" alt="arrow"></li>
                     </ul>
                 </div>
-                
+
                 <script>
                     const $li = document.querySelectorAll(".paginacao li:not(.seta)")
+
                     $li.forEach((i) => {
                         i.addEventListener("click", (event) => {
+
                             $li.forEach((item) => {
                                 item.classList.remove("ativo")
                             })
+
                             event.target.classList.add("ativo")
+
                         })
+<<<<<<< HEAD
                         
+=======
+
+>>>>>>> 454b86395f0f7f4da626807ea835c8f698136dd5
                     })
                 </script>
+
             </div>
 
         </div>
+
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="col-lg-2 logo">
+                        <a href="#"><img src="assets/img/logo-dark.svg" alt="logo"></a>
+                    </div>
+                    <div class="col-lg-1 sociais">
+                        <a href="#"><img src="assets/img/insta.svg" alt="instagram"></a>
+                        <a href="#"><img src="assets/img/face.svg" alt="instagram"></a>
+                    </div>
+                    <img src="assets/img/separador-footer.svg" alt="separador">
+
+                    <ul class="col-lg-3">
+                        <li>
+                            <h3>Produtos</h3>
+                        </li>
+                        <li><a href="#">Cabelos Naturais</a></li>
+                        <li><a href="#">Cabelos Sintéticos</a></li>
+                    </ul>
+
+                    <ul class="col-lg-3">
+                        <li>
+                            <h3>Loja Online</h3>
+                        </li>
+                        <li><a href="#">Minha Conta</a></li>
+                        <li><a href="#">Pedidos</a></li>
+                    </ul>
+
+                    <ul class="col-lg-3">
+                        <li>
+                            <h3>Institucional</h3>
+                        </li>
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="footer__footer">
+                <img src="assets/img/c1.png" alt="correios">
+                <img src="assets/img/c2.png" alt="cartoes">
+                <a href="#">
+                    <img src="assets/img/data.png" alt="Nova Data">
+                </a>
+            </div>
+        </footer>
+
 
 
 
