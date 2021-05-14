@@ -19,13 +19,14 @@
         align-items: center;
         grid-template-rows: 50px 50px;
         gap: 20px;
-        order: 3;
 
         @include d(m) {
             grid-template-columns: 50px 50px;
             grid-template-rows: initial;
             max-width: 290px;
             margin: 20px auto 10px;
+            order: 3;
+
 
         }
 
