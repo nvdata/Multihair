@@ -631,10 +631,11 @@ a.menu__btn:hover {
     ////
     pointer-events: none;
     visibility: hidden;
-    transform: scale(.9) translateY(20px);
+    transform: scale(.9) translateY(-20px);
     transition: opacity .3s ease, transform .3s ease;
-    transform-origin: top center;
-
+    transform-origin: top right;
+    border-radius: 8px;
+    overflow: hidden;
 
 
     .hoverCart__item {
@@ -680,6 +681,7 @@ a.menu__btn:hover {
       padding-top: 20px;
       padding-bottom: 20px;
       transition: background .3s ease, color .3s ease;
+      overflow: hidden;
 
       &:hover {
         background: $cor-laranja;
