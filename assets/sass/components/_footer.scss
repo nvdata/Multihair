@@ -19,6 +19,7 @@
         align-items: center;
         grid-template-rows: 50px 50px;
         gap: 20px;
+        grid-gap: 20px;
 
         @include d(m) {
             grid-template-columns: 50px 50px;
@@ -88,6 +89,7 @@
         @include d(s) {
             align-items: center;
             gap: 20px;
+            grid-gap: 20px;
             display: grid;
             justify-content: center;
 

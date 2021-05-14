@@ -400,6 +400,8 @@ $component-name:"produtos";
     display: grid;
     grid-template-columns: 40px 1fr;
     column-gap: 20px;
+    grid-column-gap: 20px;
+
     margin-bottom: 20px;
     align-items: center;
 
