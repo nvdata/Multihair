@@ -154,10 +154,10 @@
                                     <div class="hoverCart__text">
                                         <h2>Adicionado!</h2>
                                         <span>pelo de suvaco</span>
-                                        
-                                    </div>  
+
+                                    </div>
                                 </div>
-                                
+
                                 <a href="#">Ver Carrinho</a>
                             </div>
                         </div>
@@ -218,12 +218,39 @@
 </body>
 
 <script>
+    // // in the example above, assign the result
+    // var timeoutHandle = window.setTimeout(3000);
+
+    // // in your click function, call clearTimeout
+    // window.clearTimeout(timeoutHandle);
+
+    // // then call setTimeout again to reset the timer
+    // timeoutHandle = window.setTimeout(3000);
+
+
     const carrinhoMenu = document.querySelector('.cart-img');
-    
-    carrinhoMenu.addEventListener('click', function(){
+    const popUp = document.querySelector('.hoverCart__wrapper');
+
+    carrinhoMenu.addEventListener('click', manobra);
+    popUp.addEventListener("mouseenter", clear)
+    popUp.addEventListener("mouseleave", invocation)
+
+    var initial;
+    function invocation() {
+        initial = window.setTimeout(
+            function () {
+                document.body.classList.remove('popup__open');
+            }, 800);
+    }
+
+    function manobra() {
         document.body.classList.toggle('popup__open');
-        
-    });
+        invocation();
+    }
+
+    function clear() {clearTimeout(initial) }
+
+
 </script>
 
 </html>
