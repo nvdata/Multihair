@@ -133,8 +133,9 @@
                         <a class="user" href="#"><img src="./assets/img/User.svg"></a>
                         <div class="cart">
                             <a class="cart-img" href="#"><img src="./assets/img/ShoppingCart.svg"></a>
-                            <div class="hoverCart__wrapper">
-                                <div class="hoverCart__item">
+                            <div class="hoverCart__wrapper ativo">
+                               
+                                 <div class="hoverCart__item">
                                     <div class="hoverCart__img">
                                         <img src="./assets/img/adicionado.jpg">
                                     </div>
@@ -144,7 +145,8 @@
                                         
                                     </div>  
                                 </div>
-                                <p>Ver Carrinho</p>
+                                
+                                <a href="#">Ver Carrinho</a>
                             </div>
                         </div>
                         
@@ -199,5 +201,14 @@
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 
 </body>
+
+<script>
+    const carrinhoMenu = document.querySelector('.cart-img');
+    const  carrinho = document.querySelector('.hoverCart__wrapper')
+    carrinhoMenu.addEventListener('click', function(){
+        carrinho.classList.toggle('ativo');
+        
+    });
+</script>
 
 </html>
