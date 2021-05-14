@@ -153,16 +153,31 @@
                                     </div>
                                     <div class="hoverCart__text">
                                         <h2>Adicionado!</h2>
-                                        <span>pelo de suvaco</span>
+                                        <span>Cabelo TANANA</span>
 
                                     </div>
                                 </div>
-<<<<<<< HEAD
 
-=======
-                                
-                                
->>>>>>> 7bd06f8aa564fafb94ad43840d4502059c866ae8
+                                <div class="hoverCart__item">
+                                    <div class="hoverCart__img">
+                                        <img src="./assets/img/adicionado.jpg">
+                                    </div>
+                                    <div class="hoverCart__text">
+                                        <h2>Adicionado!</h2>
+                                        <span>Cabelo TANANA</span>
+
+                                    </div>
+                                </div>
+                                <div class="hoverCart__item">
+                                    <div class="hoverCart__img">
+                                        <img src="./assets/img/adicionado.jpg">
+                                    </div>
+                                    <div class="hoverCart__text">
+                                        <h2>Adicionado!</h2>
+                                        <span>Cabelo TANANA</span>
+
+                                    </div>
+                                </div>
                                 <a href="#">Ver Carrinho</a>
                             </div>
                         </div>
@@ -234,28 +249,30 @@
 
 
     const carrinhoMenu = document.querySelector('.cart-img');
-    const popUp = document.querySelector('.hoverCart__wrapper');
+    const popUp = document.querySelector('.hoverCart__wrapper'); //
 
-    carrinhoMenu.addEventListener('click', manobra);
+    carrinhoMenu.addEventListener('click', mostraPopUp); //click para mostrar o popup
     popUp.addEventListener("mouseenter", clear)
     popUp.addEventListener("mouseleave", invocation)
 
     var initial;
+
+    //faz ele desaparecer
     function invocation() {
         initial = window.setTimeout(
             function () {
                 document.body.classList.remove('popup__open');
-            }, 1200);
+            }, 800);
     }
 
-    function manobra() {
+    function mostraPopUp() {
         document.body.classList.toggle('popup__open');
         invocation();
     }
 
-    function clear() {clearTimeout(initial) }
-
-
+    function clear() {
+        clearTimeout(initial)
+    }
 </script>
 
 </html>

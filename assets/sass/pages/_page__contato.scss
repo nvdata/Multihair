@@ -80,14 +80,13 @@
 
   span {
     font-weight: 500;
-    color: $cor-preto-3;
+    color: #000;
     font-feature-settings: 'pnum'on, 'lnum'on;
     font-size: rem(16);
 
     @include d(ss) {
       font-size: rem(14);
     }
-
   }
 
 }
