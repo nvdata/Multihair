@@ -17,29 +17,17 @@
 </head>
 
 <body>
-    <main id="page__produtos-novos">
+    <main id="page__produto-detail">
 
 
-        <div class="intro" id="intro">
-            <div class="container">
-                <div class="intro__wrapper">
-                    <h1>Novos Produtos</h1>
-
-                    <form action="POST" class="select__container">
-                        <select name="filtro" id="filtro" data-custom-properties="null" data-deletable>
-                            <option value="#">Filtrar </option>
-                        </select>
-                    </form>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="lista">
-            <div class="lista__wrapper">
+        <div class="relacionados">
+            <div class="relacionados__wrapper">
 
                 <section class="produtos" id="produtos">
                     <div class="container">
+                        <h1 class="title">
+                            Produtos Relacionados
+                        </h1>
 
                         <!-- CONTAINER PRODUTOS -->
                         <div class="produtos__container">
@@ -304,46 +292,13 @@
 
                                 </div>
                             </div>
-
+                            <div class="swiper-button-next swiper-button-next-depo"></div>
+                            <div class="swiper-button-prev swiper-button-prev-depo"></div>
                         </div>
 
                     </div>
 
                 </section>
-
-            </div>
-
-            <div class="container">
-                <div class="paginacao">
-                    <!--
-                    .inativo reduz opacidade 
-                    .ativo no li da background 
-                    -->
-                    <ul>
-                        <li class="seta inativo"><img src="assets/img/left-arow.svg" alt="arrow"></li>
-                        <li class="ativo">1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li class="seta"><img src="assets/img/right-arow.svg" alt="arrow"></li>
-                    </ul>
-                </div>
-
-                <script>
-                    const $li = document.querySelectorAll(".paginacao li:not(.seta)")
-
-                    $li.forEach((i) => {
-
-                        i.addEventListener("click", (event) => {
-
-                            $li.forEach((item) => {
-                                item.classList.remove("ativo")
-                            })
-
-                            event.target.classList.add("ativo")
-
-                        })
-                    })
-                </script>
 
             </div>
 

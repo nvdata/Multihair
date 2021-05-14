@@ -1,0 +1,126 @@
+@import "../components/cards";
+@import "../components/paginacao";
+
+
+$component-name:#{"produtos"};
+
+.relacionados {
+    overflow: hidden;
+    margin-top: 90px;
+
+    .title {
+        @include titulosPrincipais(false);
+        margin-bottom: 30px
+    }
+
+    .produtos {
+        @include cards;
+        position: relative;
+
+        &__card {
+            box-shadow: $shadow-card-normal;
+        }
+
+        &__container {
+            overflow: hidden;
+            padding-left: 10px;
+            position: relative;
+
+        }
+
+        &__wrapper {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: initial;
+            gap: initial;
+            padding-bottom: 40px;
+
+
+            @include d(s) {
+                margin-top: 30px;
+            }
+
+        }
+
+        &__card {
+            box-shadow: 0px 12px 24px 6px rgba(0, 0, 0, 0.04), 0px 24px 48px 6px rgba(0, 0, 0, 0.04);
+            width: 380px;
+
+            @include d(s) {
+                width: 300px;
+                box-shadow: 0px -6px 24px 6px rgba(0, 0, 0, 0.04), 0px 24px 48px 6px rgba(0, 0, 0, 0.04);
+            }
+
+        }
+
+        .btn__container {
+            justify-content: center;
+            width: 100%;
+            margin-top: 40px;
+
+            @include d(m) {
+                display: none
+            }
+
+            .btn {
+                @include center;
+                border: 1px solid $cor-laranja;
+                // color: #000;
+                font-weight: 600;
+                // background: initial;
+
+                &:hover {
+                    background: $cor-laranja;
+                }
+            }
+        }
+
+        .swiper-button-next {
+            @include bg-props-contain;
+            background-image: url(../img/right-arow.svg);
+            width: 40px;
+            height: 40px;
+            right: 5px;
+            overflow: initial;
+            transition: opacity .2s ease;
+        }
+
+        .swiper-button-prev {
+            @include bg-props-contain;
+            background-image: url(../img/left-arow.svg);
+            width: 40px;
+            height: 40px;
+            left: 5px;
+            overflow: initial;
+            transition: opacity .2s ease;
+
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto 0;
+            cursor: pointer;
+
+            @include d(s) {
+                display: none;
+            }
+        }
+
+    }
+
+
+}
+
+.paginacao {
+    margin-top: 60px;
+    margin-bottom: 80px;
+    @include paginacao;
+}
+
+.footer {
+    background: #fff5ec85;
+    margin-top: 60px;
+}
