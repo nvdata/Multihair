@@ -20,12 +20,14 @@
 
 .body__contato {
     @import "./pages/page__contato";
-
-
 }
 
 .body__quem__somos {
     @import "./pages/page__quem__somos";
+}
+
+.body__produtos-novos {
+    @import "./pages/page__produtos-novos";
 }
 
 

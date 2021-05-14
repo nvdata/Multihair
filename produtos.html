@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.comp.css">
-    <!-- <link rel="stylesheet" href="assets/css/swiper.css"> -->
+    <link rel="stylesheet" href="assets/css/swiper.css">
 
     <title>Multihair</title>
 
@@ -22,8 +22,325 @@
 
         <div class="intro" id="intro">
             <div class="container">
+                <div class="intro__wrapper">
+                    <h1>Novos Produtos</h1>
+
+                    <form action="POST" class="select__container">
+                        <select name="filtro" id="filtro" data-custom-properties="null" data-deletable>
+                            <option value="#">Filtrar </option>
+                        </select>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="lista">
+            <div class="lista__wrapper">
+
+                <section class="produtos" id="produtos">
+                    <div class="container">
+
+                        <!-- CONTAINER PRODUTOS -->
+                        <div class="produtos__container">
+
+                            <div class="produtos__wrapper swiper-wrapper">
+
+                                <div class="produtos__card swiper-slide">
+                                    <span class="badge__desc">-60%</span>
+
+                                    <div class="img__container">
+                                        <img src="assets/img/cabelo-1.png" alt="cabelo">
+                                    </div>
+                                    <div class="text__container">
+                                        <a class="produtos__nome" href="#">
+                                            Cabelo Humano Natural 75 A 80cm 1kg Cabelo Humano Natural 75 A 80cm
+                                            1kgCabelo Humano
+                                            Natural 75 A 80cm
+                                        </a>
+
+                                        <div class="produtos__desc">
+                                            <div class="produtos__desc-preco">
+                                                <span class="value">
+                                                    $1540,00
+                                                </span>
+                                                <p class="desc">
+                                                    ou 4x de 600,00 sem juros
+                                                </p>
+                                            </div>
+                                            <div class="produtos__desc-action">
+                                                <svg width="27" height="24" viewBox="0 0 27 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5.01531 5.59619H24.383C24.5131 5.59619 24.6417 5.62409 24.7595 5.67793C24.8774 5.73176 24.9817 5.81021 25.065 5.90773C25.1484 6.00525 25.2088 6.11946 25.242 6.24229C25.2752 6.36511 25.2803 6.49355 25.2571 6.61853L23.32 17.0259C23.2828 17.2258 23.1749 17.4066 23.0152 17.5367C22.8554 17.6669 22.654 17.7382 22.4459 17.7382H8.02666C7.8187 17.7382 7.61732 17.6669 7.45763 17.5369C7.29793 17.4068 7.19003 17.2262 7.15272 17.0265L4.34066 1.97146C4.30335 1.77173 4.19545 1.5911 4.03575 1.46105C3.87605 1.331 3.67468 1.25977 3.46672 1.25977H1.46191"
+                                                        stroke="white" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path
+                                                        d="M8.56869 23.809C9.54994 23.809 10.3454 23.0324 10.3454 22.0744C10.3454 21.1164 9.54994 20.3398 8.56869 20.3398C7.58745 20.3398 6.79199 21.1164 6.79199 22.0744C6.79199 23.0324 7.58745 23.809 8.56869 23.809Z"
+                                                        fill="#FE5335" />
+                                                    <path
+                                                        d="M21.8939 23.809C22.8751 23.809 23.6706 23.0324 23.6706 22.0744C23.6706 21.1164 22.8751 20.3398 21.8939 20.3398C20.9126 20.3398 20.1172 21.1164 20.1172 22.0744C20.1172 23.0324 20.9126 23.809 21.8939 23.809Z"
+                                                        fill="#FE5335" />
+                                                </svg>
+                                                Adicionar
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="produtos__card swiper-slide">
+                                    <span class="badge__desc">-10%</span>
+
+                                    <div class="img__container">
+                                        <img src="assets/img/cabelo-1.png" alt="cabelo">
+                                    </div>
+                                    <div class="text__container">
+                                        <a class="produtos__nome" href="#">
+                                            Cabelo Humano Natural 75 A 80cm 1kg Cabelo Humano Natural 75 A 80cm
+                                            1kgCabelo Humano
+                                            Natural 75 A 80cm
+                                        </a>
+
+                                        <div class="produtos__desc">
+                                            <div class="produtos__desc-preco">
+                                                <span class="value">
+                                                    $1540,00
+                                                </span>
+                                                <p class="desc">
+                                                    ou 4x de 600,00 sem juros
+                                                </p>
+                                            </div>
+                                            <div class="produtos__desc-action">
+                                                <svg width="27" height="24" viewBox="0 0 27 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5.01531 5.59619H24.383C24.5131 5.59619 24.6417 5.62409 24.7595 5.67793C24.8774 5.73176 24.9817 5.81021 25.065 5.90773C25.1484 6.00525 25.2088 6.11946 25.242 6.24229C25.2752 6.36511 25.2803 6.49355 25.2571 6.61853L23.32 17.0259C23.2828 17.2258 23.1749 17.4066 23.0152 17.5367C22.8554 17.6669 22.654 17.7382 22.4459 17.7382H8.02666C7.8187 17.7382 7.61732 17.6669 7.45763 17.5369C7.29793 17.4068 7.19003 17.2262 7.15272 17.0265L4.34066 1.97146C4.30335 1.77173 4.19545 1.5911 4.03575 1.46105C3.87605 1.331 3.67468 1.25977 3.46672 1.25977H1.46191"
+                                                        stroke="white" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path
+                                                        d="M8.56869 23.809C9.54994 23.809 10.3454 23.0324 10.3454 22.0744C10.3454 21.1164 9.54994 20.3398 8.56869 20.3398C7.58745 20.3398 6.79199 21.1164 6.79199 22.0744C6.79199 23.0324 7.58745 23.809 8.56869 23.809Z"
+                                                        fill="#FE5335" />
+                                                    <path
+                                                        d="M21.8939 23.809C22.8751 23.809 23.6706 23.0324 23.6706 22.0744C23.6706 21.1164 22.8751 20.3398 21.8939 20.3398C20.9126 20.3398 20.1172 21.1164 20.1172 22.0744C20.1172 23.0324 20.9126 23.809 21.8939 23.809Z"
+                                                        fill="#FE5335" />
+                                                </svg>
+                                                Adicionar
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="produtos__card swiper-slide">
+                                    <span class="badge__desc">-40%</span>
+
+                                    <div class="img__container">
+                                        <img src="assets/img/cabelo-1.png" alt="cabelo">
+                                    </div>
+                                    <div class="text__container">
+                                        <a class="produtos__nome" href="#">
+                                            Cabelo Humano Natural 75 A 80cm 1kg Cabelo Humano Natural 75 A 80cm
+                                            1kgCabelo Humano
+                                            Natural 75 A 80cm
+                                        </a>
+
+                                        <div class="produtos__desc">
+                                            <div class="produtos__desc-preco">
+                                                <span class="value">
+                                                    $1540,00
+                                                </span>
+                                                <p class="desc">
+                                                    ou 4x de 600,00 sem juros
+                                                </p>
+                                            </div>
+                                            <div class="produtos__desc-action">
+                                                <svg width="27" height="24" viewBox="0 0 27 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5.01531 5.59619H24.383C24.5131 5.59619 24.6417 5.62409 24.7595 5.67793C24.8774 5.73176 24.9817 5.81021 25.065 5.90773C25.1484 6.00525 25.2088 6.11946 25.242 6.24229C25.2752 6.36511 25.2803 6.49355 25.2571 6.61853L23.32 17.0259C23.2828 17.2258 23.1749 17.4066 23.0152 17.5367C22.8554 17.6669 22.654 17.7382 22.4459 17.7382H8.02666C7.8187 17.7382 7.61732 17.6669 7.45763 17.5369C7.29793 17.4068 7.19003 17.2262 7.15272 17.0265L4.34066 1.97146C4.30335 1.77173 4.19545 1.5911 4.03575 1.46105C3.87605 1.331 3.67468 1.25977 3.46672 1.25977H1.46191"
+                                                        stroke="white" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path
+                                                        d="M8.56869 23.809C9.54994 23.809 10.3454 23.0324 10.3454 22.0744C10.3454 21.1164 9.54994 20.3398 8.56869 20.3398C7.58745 20.3398 6.79199 21.1164 6.79199 22.0744C6.79199 23.0324 7.58745 23.809 8.56869 23.809Z"
+                                                        fill="#FE5335" />
+                                                    <path
+                                                        d="M21.8939 23.809C22.8751 23.809 23.6706 23.0324 23.6706 22.0744C23.6706 21.1164 22.8751 20.3398 21.8939 20.3398C20.9126 20.3398 20.1172 21.1164 20.1172 22.0744C20.1172 23.0324 20.9126 23.809 21.8939 23.809Z"
+                                                        fill="#FE5335" />
+                                                </svg>
+                                                Adicionar
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <!-- carousel produtos mobile 2 -->
+                                <div class="produtos__card swiper-slide">
+
+                                    <div class="img__container">
+                                        <img src="assets/img/cabelo-1.png" alt="cabelo">
+                                    </div>
+                                    <div class="text__container">
+                                        <a class="produtos__nome" href="#">
+                                            Cabelo Humano Natural 75 A 80cm 1kg Cabelo Humano Natural 75 A 80cm
+                                            1kgCabelo Humano
+                                            Natural 75 A 80cm
+                                        </a>
+
+                                        <div class="produtos__desc">
+                                            <div class="produtos__desc-preco">
+                                                <span class="value">
+                                                    $1540,00
+                                                </span>
+                                                <p class="desc">
+                                                    ou 4x de 600,00 sem juros
+                                                </p>
+                                            </div>
+                                            <div class="produtos__desc-action">
+                                                <svg width="27" height="24" viewBox="0 0 27 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5.01531 5.59619H24.383C24.5131 5.59619 24.6417 5.62409 24.7595 5.67793C24.8774 5.73176 24.9817 5.81021 25.065 5.90773C25.1484 6.00525 25.2088 6.11946 25.242 6.24229C25.2752 6.36511 25.2803 6.49355 25.2571 6.61853L23.32 17.0259C23.2828 17.2258 23.1749 17.4066 23.0152 17.5367C22.8554 17.6669 22.654 17.7382 22.4459 17.7382H8.02666C7.8187 17.7382 7.61732 17.6669 7.45763 17.5369C7.29793 17.4068 7.19003 17.2262 7.15272 17.0265L4.34066 1.97146C4.30335 1.77173 4.19545 1.5911 4.03575 1.46105C3.87605 1.331 3.67468 1.25977 3.46672 1.25977H1.46191"
+                                                        stroke="white" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path
+                                                        d="M8.56869 23.809C9.54994 23.809 10.3454 23.0324 10.3454 22.0744C10.3454 21.1164 9.54994 20.3398 8.56869 20.3398C7.58745 20.3398 6.79199 21.1164 6.79199 22.0744C6.79199 23.0324 7.58745 23.809 8.56869 23.809Z"
+                                                        fill="#FE5335" />
+                                                    <path
+                                                        d="M21.8939 23.809C22.8751 23.809 23.6706 23.0324 23.6706 22.0744C23.6706 21.1164 22.8751 20.3398 21.8939 20.3398C20.9126 20.3398 20.1172 21.1164 20.1172 22.0744C20.1172 23.0324 20.9126 23.809 21.8939 23.809Z"
+                                                        fill="#FE5335" />
+                                                </svg>
+                                                Adicionar
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="produtos__card swiper-slide">
+
+                                    <div class="img__container">
+                                        <img src="assets/img/cabelo-1.png" alt="cabelo">
+                                    </div>
+                                    <div class="text__container">
+                                        <a class="produtos__nome" href="#">
+                                            Cabelo Humano Natural 75 A 80cm 1kg Cabelo Humano Natural 75 A 80cm
+                                            1kgCabelo Humano
+                                            Natural 75 A 80cm
+                                        </a>
+
+                                        <div class="produtos__desc">
+                                            <div class="produtos__desc-preco">
+                                                <span class="value">
+                                                    $1540,00
+                                                </span>
+                                                <p class="desc">
+                                                    ou 4x de 600,00 sem juros
+                                                </p>
+                                            </div>
+                                            <div class="produtos__desc-action">
+                                                <svg width="27" height="24" viewBox="0 0 27 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5.01531 5.59619H24.383C24.5131 5.59619 24.6417 5.62409 24.7595 5.67793C24.8774 5.73176 24.9817 5.81021 25.065 5.90773C25.1484 6.00525 25.2088 6.11946 25.242 6.24229C25.2752 6.36511 25.2803 6.49355 25.2571 6.61853L23.32 17.0259C23.2828 17.2258 23.1749 17.4066 23.0152 17.5367C22.8554 17.6669 22.654 17.7382 22.4459 17.7382H8.02666C7.8187 17.7382 7.61732 17.6669 7.45763 17.5369C7.29793 17.4068 7.19003 17.2262 7.15272 17.0265L4.34066 1.97146C4.30335 1.77173 4.19545 1.5911 4.03575 1.46105C3.87605 1.331 3.67468 1.25977 3.46672 1.25977H1.46191"
+                                                        stroke="white" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path
+                                                        d="M8.56869 23.809C9.54994 23.809 10.3454 23.0324 10.3454 22.0744C10.3454 21.1164 9.54994 20.3398 8.56869 20.3398C7.58745 20.3398 6.79199 21.1164 6.79199 22.0744C6.79199 23.0324 7.58745 23.809 8.56869 23.809Z"
+                                                        fill="#FE5335" />
+                                                    <path
+                                                        d="M21.8939 23.809C22.8751 23.809 23.6706 23.0324 23.6706 22.0744C23.6706 21.1164 22.8751 20.3398 21.8939 20.3398C20.9126 20.3398 20.1172 21.1164 20.1172 22.0744C20.1172 23.0324 20.9126 23.809 21.8939 23.809Z"
+                                                        fill="#FE5335" />
+                                                </svg>
+                                                Adicionar
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="produtos__card swiper-slide">
+
+                                    <div class="img__container">
+                                        <img src="assets/img/cabelo-1.png" alt="cabelo">
+                                    </div>
+                                    <div class="text__container">
+                                        <a class="produtos__nome" href="#">
+                                            Cabelo Humano Natural 75 A 80cm 1kg Cabelo Humano Natural 75 A 80cm
+                                            1kgCabelo Humano
+                                            Natural 75 A 80cm
+                                        </a>
+
+                                        <div class="produtos__desc">
+                                            <div class="produtos__desc-preco">
+                                                <span class="value">
+                                                    $1540,00
+                                                </span>
+                                                <p class="desc">
+                                                    ou 4x de 600,00 sem juros
+                                                </p>
+                                            </div>
+                                            <div class="produtos__desc-action">
+                                                <svg width="27" height="24" viewBox="0 0 27 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5.01531 5.59619H24.383C24.5131 5.59619 24.6417 5.62409 24.7595 5.67793C24.8774 5.73176 24.9817 5.81021 25.065 5.90773C25.1484 6.00525 25.2088 6.11946 25.242 6.24229C25.2752 6.36511 25.2803 6.49355 25.2571 6.61853L23.32 17.0259C23.2828 17.2258 23.1749 17.4066 23.0152 17.5367C22.8554 17.6669 22.654 17.7382 22.4459 17.7382H8.02666C7.8187 17.7382 7.61732 17.6669 7.45763 17.5369C7.29793 17.4068 7.19003 17.2262 7.15272 17.0265L4.34066 1.97146C4.30335 1.77173 4.19545 1.5911 4.03575 1.46105C3.87605 1.331 3.67468 1.25977 3.46672 1.25977H1.46191"
+                                                        stroke="white" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path
+                                                        d="M8.56869 23.809C9.54994 23.809 10.3454 23.0324 10.3454 22.0744C10.3454 21.1164 9.54994 20.3398 8.56869 20.3398C7.58745 20.3398 6.79199 21.1164 6.79199 22.0744C6.79199 23.0324 7.58745 23.809 8.56869 23.809Z"
+                                                        fill="#FE5335" />
+                                                    <path
+                                                        d="M21.8939 23.809C22.8751 23.809 23.6706 23.0324 23.6706 22.0744C23.6706 21.1164 22.8751 20.3398 21.8939 20.3398C20.9126 20.3398 20.1172 21.1164 20.1172 22.0744C20.1172 23.0324 20.9126 23.809 21.8939 23.809Z"
+                                                        fill="#FE5335" />
+                                                </svg>
+                                                Adicionar
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
 
             </div>
+
+            <div class="container">
+                <div class="paginacao">
+                    <!--
+                    .inativo reduz opacidade 
+                    .ativo no li da background 
+                    -->
+                    <ul>
+                        <li class="seta inativo"><img src="assets/img/left-arow.svg" alt="arrow"></li>
+                        <li class="ativo">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li class="seta"><img src="assets/img/right-arow.svg" alt="arrow"></li>
+                    </ul>
+                </div>
+                
+                <script>
+                    const $li = document.querySelectorAll(".paginacao li:not(.seta)")
+                    $li.forEach((i) => {
+                        i.addEventListener("click", (event) => {
+                            $li.forEach((item) => {
+                                item.classList.remove("ativo")
+                            })
+                            event.target.classList.add("ativo")
+                        })
+                    })
+                </script>
+            </div>
+
         </div>
 
 
@@ -69,7 +386,14 @@
                             <a class="lupa" href="#"><img src="./assets/img/MagnifyingGlass.svg"></a>
                         </div>
                         <a class="user" href="#"><img src="./assets/img/User.svg"></a>
-                        <a class="cart" href="#"><img src="./assets/img/ShoppingCart.svg"></a>
+
+                        <a class="cart" href="#">
+
+                            <img src="./assets/img/ShoppingCart.svg">
+
+
+
+                        </a>
                     </div>
 
                 </div>
@@ -122,28 +446,6 @@
     </main>
     <!-- fim da main -->
 
-    <i id="theme2" onclick="change()"></i>
-
-    <style>
-        #theme2 {
-            width: 40px;
-            height: 40px;
-            position: fixed;
-            bottom: 5vh;
-            right: 5vh;
-            background: burlywood;
-            display: block;
-            z-index: 9999;
-            border-radius: 50%;
-            cursor: pointer;
-        }
-    </style>
-
-    <script>
-        function change() {
-            document.body.classList.toggle("tema2")
-        }
-    </script>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -152,6 +454,7 @@
     <script type="text/javascript" src="assets/js/jquery.zoom.min.js"></script>
 
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
 
     <script>
         //zoom img cards

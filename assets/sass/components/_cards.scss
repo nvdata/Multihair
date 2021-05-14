@@ -6,12 +6,13 @@
         margin-top: 80px;
         grid-template-columns: repeat(auto-fit, minmax(290px, 380px));
         gap: 30px;
+        grid-gap: 30px;
         justify-content: center;
 
         @include d(m) {
             display: flex;
             gap: initial;
-            flex-flow: row nowrap;
+            grid-gap: initial;
             justify-content: initial;
         }
 
@@ -30,7 +31,7 @@
 
         .img__container {
             position: relative;
-            height: 340px;
+            height: 280px;
             cursor: zoom-in;
 
             @include d(s) {
@@ -41,6 +42,12 @@
             &:hover {
                 img:not([role="presentation"]) {
                     display: none !important;
+                }
+
+                @include d(m) {
+                    img:not([role="presentation"]) {
+                        display: block !important;
+                    }
                 }
             }
 
@@ -89,6 +96,7 @@
             justify-content: space-between;
             grid-template-columns: 1fr 1fr;
             gap: 5px;
+            grid-gap: 5px;
 
             @include d(s) {
                 display: flex;

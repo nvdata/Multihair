@@ -90,6 +90,9 @@ input[type="submit"] {
   outline: 0px transparent !important;
 }
 
-// body,
-// button,
-// select {}
+
+input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
