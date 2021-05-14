@@ -65,6 +65,14 @@
 
 
 
+.popup__open {
+
+  .hoverCart__wrapper {
+    display: block !important;
+  }
+}
+
+
 
 
 .container__menu {
@@ -166,33 +174,36 @@ a.menu__btn:hover {
     margin-right: 15px;
   }
 
+
+
+
   .cart {
     position: relative;
 
     .hoverCart__wrapper {
+      display: none;
       background: #ffff;
-      display: flex;
-
       flex-direction: column;
       position: absolute;
       right: 0;
-      top: 50px;
-      width: 280px;
-      height: 160px;
+      top: 60px;
+      min-width: 280px;
       align-items: center;
-      border: 1px solid #000;
-
+      border-radius: 4px;
+      box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.15);
+      ;
 
       .hoverCart__item {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 20px;
+        width: 100%;
+        padding: 15px 20px;
 
         .hoverCart__img {
           img {
             object-fit: cover;
-            margin-right: 16px;
+            @include center;
           }
         }
 
@@ -212,20 +223,28 @@ a.menu__btn:hover {
         }
       }
 
-      p {
-        padding-top: 20px;
+      a {
         color: $cor-laranja-2;
         font-weight: bold;
-        width: 80%;
+        width: 100%;
         text-align: center;
+        position: relative;
+        height: 70px;
+        display: grid;
+        place-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
 
         &:before {
           content: "";
           display: block;
-          width: 100%;
+          width: 80%;
           height: 1px;
           background: $cor-cinza-1;
           margin-bottom: 10px;
+          position: absolute;
+          top: 10px;
         }
       }
 
@@ -234,6 +253,10 @@ a.menu__btn:hover {
   }
 
 }
+
+
+
+
 
 .menu__buscar {
   position: relative;
