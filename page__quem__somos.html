@@ -144,42 +144,47 @@
                         </div>
                         <a class="user" href="#"><img src="./assets/img/User.svg"></a>
                         <div class="cart">
-                            <a class="cart-img" href="#"><img src="./assets/img/ShoppingCart.svg"></a>
-                            <div class="hoverCart__wrapper">
+                            <a class="js-cart-popup" href="#"><img src="./assets/img/ShoppingCart.svg"></a>
 
-                                <div class="hoverCart__item">
-                                    <div class="hoverCart__img">
-                                        <img src="./assets/img/adicionado.jpg">
-                                    </div>
-                                    <div class="hoverCart__text">
-                                        <h2>Adicionado!</h2>
-                                        <span>Cabelo TANANA</span>
+                            <!-- popup carrinho  js= popUpcart() scss = /components/popup -->
+                            <div class="popup__cart-wrapper" id="popup__carinho-adicionado">
+                                <div class="popup__container">
+                                    <div class="popup__cart-item">
+                                        <div class="popup__js-cart-popup">
+                                            <img src="./assets/img/adicionado.jpg">
+                                        </div>
+                                        <div class="popup__cart-text">
+                                            <h2>Adicionado!</h2>
+                                            <span>Cabelo TANANA</span>
 
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div class="hoverCart__item">
-                                    <div class="hoverCart__img">
-                                        <img src="./assets/img/adicionado.jpg">
-                                    </div>
-                                    <div class="hoverCart__text">
-                                        <h2>Adicionado!</h2>
-                                        <span>Cabelo TANANA</span>
+                                    <div class="popup__cart-item">
+                                        <div class="popup__js-cart-popup">
+                                            <img src="./assets/img/adicionado.jpg">
+                                        </div>
+                                        <div class="popup__cart-text">
+                                            <h2>Adicionado!</h2>
+                                            <span>Cabelo TANANA</span>
 
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="hoverCart__item">
-                                    <div class="hoverCart__img">
-                                        <img src="./assets/img/adicionado.jpg">
-                                    </div>
-                                    <div class="hoverCart__text">
-                                        <h2>Adicionado!</h2>
-                                        <span>Cabelo TANANA</span>
+                                    <div class="popup__cart-item">
+                                        <div class="popup__js-cart-popup">
+                                            <img src="./assets/img/adicionado.jpg">
+                                        </div>
+                                        <div class="popup__cart-text">
+                                            <h2>Adicionado!</h2>
+                                            <span>Cabelo TANANA</span>
 
+                                        </div>
                                     </div>
                                 </div>
                                 <a href="#">Ver Carrinho</a>
                             </div>
+
+
                         </div>
 
 
@@ -250,40 +255,6 @@
 
     // // then call setTimeout again to reset the timer
     // timeoutHandle = window.setTimeout(3000);
-
-
-    const carrinhoMenu = document.querySelector('.cart-img');
-    const popUp = document.querySelector('.hoverCart__wrapper'); //
-
-    carrinhoMenu.addEventListener('click', mostraPopUp); //click para mostrar o popup
-    popUp.addEventListener("mouseenter", clear)
-    popUp.addEventListener("mouseleave", invocation)
-
-    var initial;
-
-    //faz ele desaparecer
-    function invocation() {
-        initial = window.setTimeout(
-            function () {
-                popUp.setAttribute(
-                    "style",
-                    "animation: voltaRedonda 250ms both ease-in;"
-                );
-                setTimeout(() => {
-                    document.body.classList.remove('popup__open');
-                    popUp.removeAttribute("style", "animation");
-                }, 200);
-            }, 800);
-    }
-
-    function mostraPopUp() {
-        document.body.classList.toggle('popup__open');
-        invocation();
-    }
-
-    function clear() {
-        clearTimeout(initial)
-    }
 </script>
 
 </html>

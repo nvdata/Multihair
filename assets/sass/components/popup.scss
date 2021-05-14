@@ -1,4 +1,7 @@
-.hoverCart__wrapper {
+@import "../cores__font";
+@import "../utilities/scrollbars";
+
+.popup__cart-wrapper {
     // display: none;
     background: #ffff;
     flex-direction: column;
@@ -17,9 +20,10 @@
     transform-origin: top right;
     border-radius: 8px;
     overflow: hidden;
+    z-index: 9999;
 
 
-    .hoverCart__item {
+    .popup__cart-item {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -27,7 +31,8 @@
         padding: 15px 20px;
         margin-bottom: 10px;
 
-        .hoverCart__img {
+
+        .popup__js-cart-popup {
             img {
                 object-fit: cover;
                 margin-left: auto;
@@ -35,7 +40,7 @@
             }
         }
 
-        .hoverCart__text {
+        .popup__cart-text {
             display: flex;
             flex-direction: column;
 
@@ -101,7 +106,7 @@
 
 //classe do body
 .popup__open {
-    .menu .hoverCart__wrapper {
+    .menu .popup__cart-wrapper {
         transform: scale(1) translateY(0);
         pointer-events: all;
         visibility: visible;
@@ -109,3 +114,4 @@
         transform-origin: top right;
     }
 }
+

@@ -8,11 +8,11 @@ import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
 import * as config from './modules/swiper__props.js'; //Configs do Swiper
 import Dom from './modules/constructors.js'; //selecionar elementos
 import menu from './modules/menu.js'; //js do menu
-
+import popUpCart from './modules/popup-cart.js'; //Popup
 // linkDentroLink()
 // linkDentroLink()
 menu();
-
+popUpCart() //popUp add carinho
 
 const mediaQuebra = window.matchMedia('(max-width: 1024px)').matches
 

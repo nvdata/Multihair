@@ -616,3 +616,9 @@ a.menu__btn:hover {
 .cart {
   position: relative;
 }
+
+.popup__container {
+  max-height: 300px !important;
+  overflow-y: auto;
+  @include scrollbars(8px, $cor-cinza-2, rgb(238, 238, 238));
+}
