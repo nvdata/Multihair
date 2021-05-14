@@ -21,6 +21,7 @@ const pageHome = new Dom().el("#page__home");
 const pageContato = new Dom().el("#page__contato");
 const pageSobre = new Dom().el("#page__quem__somos");
 const pageProdutosNovos = new Dom().el("#page__produtos-novos");
+const pageProdutoDetail = new Dom().el("#page__produto-detail");
 
 
 if (pageHome) { // ★ HOME 
@@ -38,10 +39,16 @@ if (pageHome) { // ★ HOME
 
 } else if (pageSobre) { // ★ Quem somos
     new Dom().bodyClass("body__quem__somos");
+
 } else if (pageProdutosNovos) { // ★ Novos Produtos
     new Dom().bodyClass("body__produtos-novos");
+
     if (mediaQuebra) //se mobile
     {
         new Swiper(".produtos__container", config.props)
     }
+} else if (pageProdutoDetail) { // ★ Novos Produtos
+    new Dom().bodyClass("body__produto-detail");
+    new Swiper(".produtos__container", config.propsDepo)
+
 }
