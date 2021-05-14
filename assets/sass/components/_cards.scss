@@ -83,10 +83,12 @@
 
         //wrapper preco e call
         .#{$component-name}__desc {
-            display: flex;
+            display: grid;
             align-items: center;
             margin-bottom: 30px;
             justify-content: space-between;
+            grid-template-columns: 1fr 1fr;
+            gap: 5px;
 
             @include d(s) {
                 flex-direction: column;
@@ -98,10 +100,12 @@
                 margin-right: auto;
             }
 
+            //botao comprar
 
             &-action {
-                display: flex;
+                display: inline-flex;
                 align-items: center;
+                justify-content: center;
                 background: #000;
                 font-weight: 600;
                 letter-spacing: .3px;
