@@ -269,6 +269,8 @@ $component-name:"produtos";
   padding: 120px 0;
   position: relative;
   overflow: hidden;
+  
+  @include cards; //include estilo dos cards
 
   @include d(s) {
     padding-top: 60px;
@@ -281,7 +283,7 @@ $component-name:"produtos";
     }
   }
 
-  @include cards; //include estilo dos cards
+
 
   .btn__container {
     justify-content: center;

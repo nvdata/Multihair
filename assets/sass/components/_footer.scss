@@ -101,6 +101,11 @@
         img {
             object-fit: contain;
 
+            &:last-child {
+                width: 90px;
+
+            }
+
             @include d(m) {
                 margin: 0 auto;
             }

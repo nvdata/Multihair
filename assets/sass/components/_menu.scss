@@ -427,7 +427,8 @@ a.menu__btn:hover {
   width: 100%;
   height: 100%;
   position: fixed;
-  opacity: .05;
+  opacity: .1;
+  top: 0;
 }
 
 
@@ -577,6 +578,12 @@ a.menu__btn:hover {
   }
 }
 
+.menu__buscar {
+  input {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+}
 
 
 // .menu__logo img {

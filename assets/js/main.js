@@ -40,4 +40,8 @@ if (pageHome) { // ★ HOME
     new Dom().bodyClass("body__quem__somos");
 } else if (pageProdutosNovos) { // ★ Novos Produtos
     new Dom().bodyClass("body__produtos-novos");
+    if (mediaQuebra) //se mobile
+    {
+        new Swiper(".produtos__container", config.props)
+    }
 }
