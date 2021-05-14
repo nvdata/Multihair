@@ -232,9 +232,13 @@
         </nav>
         <div class="fundo__black"></div>
     </main>
+
+
     <script type="module" src="assets/js/main.js"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+        integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+        crossorigin="anonymous"></script>
 </body>
 
 <script>
@@ -261,7 +265,14 @@
     function invocation() {
         initial = window.setTimeout(
             function () {
-                document.body.classList.remove('popup__open');
+                popUp.setAttribute(
+                    "style",
+                    "animation: voltaRedonda 250ms both ease-in;"
+                );
+                setTimeout(() => {
+                    document.body.classList.remove('popup__open');
+                    popUp.removeAttribute("style", "animation");
+                }, 200);
             }, 800);
     }
 
