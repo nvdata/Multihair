@@ -1,0 +1,190 @@
+@mixin cards {
+
+    //grid
+    &__wrapper {
+        display: grid;
+        margin-top: 80px;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 380px));
+        gap: 30px;
+        justify-content: center;
+
+        @include d(m) {
+            display: flex;
+            gap: initial;
+            flex-flow: row nowrap;
+            justify-content: initial;
+        }
+
+    }
+
+    //card item
+    &__card {
+        background: white;
+        border-radius: 8px;
+        box-shadow: $shadow-card;
+        position: relative;
+
+        @include d(m) {
+            min-width: 290px;
+        }
+
+        .img__container {
+            position: relative;
+            height: 340px;
+            cursor: zoom-in;
+
+            @include d(s) {
+                height: 230px;
+            }
+
+            //plugin de zoom display none
+            &:hover {
+                img:not([role="presentation"]) {
+                    display: none !important;
+                }
+            }
+
+            img {
+                object-fit: contain;
+                @include size(100%);
+                position: absolute;
+
+
+            }
+        }
+
+        .text__container {
+            padding: 0 20px;
+
+        }
+
+        //titulo do card
+        a.#{$component-name}__nome {
+            margin: 20px 0;
+            display: inline-block;
+            font-weight: medium;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            font-weight: 500;
+            line-height: 140%;
+            color: $cor-preto-2;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            @include d(s) {
+                -webkit-line-clamp: 2;
+                margin-bottom: 10px;
+            }
+        }
+
+        //wrapper preco e call
+        .#{$component-name}__desc {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            justify-content: space-between;
+
+            @include d(s) {
+                flex-direction: column;
+                margin-bottom: 20px;
+            }
+
+            //preco e desconto div
+            .#{$component-name}__desc-preco {
+                margin-right: auto;
+            }
+
+
+            &-action {
+                display: flex;
+                align-items: center;
+                background: #000;
+                font-weight: 600;
+                letter-spacing: .3px;
+                color: White;
+                padding: 12px 20px;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: background .3s ease, color .3s ease, transform .3s ease;
+
+                @include d(s) {
+                    text-align: center;
+                    width: 100%;
+                    justify-content: center;
+                    margin-top: 12px;
+                }
+
+                svg path {
+                    transition: stroke .3s ease;
+                }
+
+                &:hover {
+                    color: $cor-laranja;
+
+
+                    svg {
+                        path:first-child {
+                            stroke: $cor-laranja;
+                        }
+                    }
+                }
+
+                svg {
+                    margin-right: 5px;
+
+                    @include d(s) {
+                        margin-right: 10px;
+
+                    }
+                }
+            }
+
+            .desc {
+                font-feature-settings: 'pnum'on, 'lnum'on;
+                color: #00AC5A;
+                font-size: 12px;
+                font-weight: 700;
+                margin-top: 10px;
+
+                @include d(s) {
+                    margin-top: 4px;
+                }
+            }
+
+            .value {
+                font-weight: 600;
+                font-size: 20px;
+                color: #000;
+                font-feature-settings: 'pnum'on, 'lnum'on;
+                letter-spacing: .5px;
+            }
+
+            //badge desconto
+
+        }
+
+        .badge__desc {
+            position: absolute;
+            background: $cor-laranja;
+            right: 10%;
+            top: -10px;
+            padding: 4px 10px;
+            border-radius: 38px;
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+
+        }
+    }
+
+    @media (max-width:1440px) {
+        .#{$component-name}__wrapper {
+            grid-template-columns: repeat(auto-fit, minmax(290px, 350px));
+        }
+    }
+
+}

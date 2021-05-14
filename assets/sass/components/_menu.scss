@@ -123,7 +123,7 @@
 .menu__links a {
   font-size: 1.125rem;
   transition: color 0.4s ease;
-  font-weight: 400;
+  font-weight: 500;
   padding: var(--padding-links);
 }
 
@@ -215,13 +215,16 @@ a.menu__btn:hover {
   position: relative;
   align-items: center;
 
+  a {
+    display: inline-grid;
+    align-items: center;
+    grid-template-columns: 1fr 20px;
+    column-gap: 5px;
 
+  }
 
   ion-icon {
-    position: absolute;
-    top: 6px;
-    right: -10px;
-
+    color: $cor-laranja;
   }
 
 
@@ -241,6 +244,7 @@ a.menu__btn:hover {
   gap: var(--drop-space);
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
   transition: .3s ease;
+  pointer-events: none;
 }
 
 #dropdown__content a {
@@ -252,7 +256,7 @@ a.menu__btn:hover {
 
 .menu__dropdown:hover #dropdown__content {
   animation: opacity .3s ease-in-out both;
-
+  pointer-events: all;
 }
 
 /* scroll ativo */

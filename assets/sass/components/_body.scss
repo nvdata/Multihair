@@ -4,8 +4,9 @@ body {
     overflow-x: hidden;
     transition: all 0.3s ease;
     opacity: 0;
+    letter-spacing: 0.2px;
 
-
+    font-feature-settings: 'pnum'on, 'lnum'on;
     &.dcl {
         opacity: 1;
     }

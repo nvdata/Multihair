@@ -143,3 +143,49 @@ const propstrans = {
         },
     }
 }
+
+const botaoNext = document.querySelector(".swiper-button-next-depo")
+const botaoPrev = document.querySelector(".swiper-button-prev-depo")
+export
+const propsDepo = {
+    slidesPerView: 'auto',
+    spaceBetween: 30,
+    centeredSlides: false,
+
+    navigation: {
+        nextEl: botaoNext,
+        prevEl: botaoPrev,
+    },
+
+    breakpoints: {
+        320: {
+            slidesPerView: "auto",
+            centeredSlides: true,
+            spaceBetween: 15,
+            speed: 600,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: true,
+            },
+
+        },
+        720: {
+            slidesPerView: "auto",
+            centeredSlides: false,
+            spaceBetween: 15,
+        },
+        1024: {
+            slidesPerView: "auto",
+            spaceBetween: 50,
+            centeredSlides: false,
+
+        },
+
+        1240: {
+            slidesPerView: "auto",
+            spaceBetween: 20,
+            centeredSlides: false,
+
+        },
+    }
+}
