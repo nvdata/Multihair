@@ -175,11 +175,13 @@ a.menu__btn:hover {
   }
 
 
+  /* CARRINHO DO SHOPPING */
 
 
   .cart {
     position: relative;
 
+    /* CONTAINER DO HOVER CART */
     .hoverCart__wrapper {
       display: none;
       background: #ffff;
@@ -192,6 +194,9 @@ a.menu__btn:hover {
       border-radius: 4px;
       box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.15);
       ;
+
+
+      // FOTO E TEXTO DO HOVERCART
 
       .hoverCart__item {
         display: flex;
@@ -223,6 +228,8 @@ a.menu__btn:hover {
         }
       }
 
+
+      // TEXTO DO VER CARRINHO
       a {
         color: $cor-laranja-2;
         font-weight: bold;
@@ -235,7 +242,7 @@ a.menu__btn:hover {
         padding-top: 20px;
         padding-bottom: 20px;
 
-
+        // LINHA ACIMA DO TEXTO VER CARRINHO
         &:before {
           content: "";
           display: block;
@@ -253,6 +260,8 @@ a.menu__btn:hover {
   }
 
 }
+
+// FIM DO CARRINHO DO SHOPPING
 
 
 
