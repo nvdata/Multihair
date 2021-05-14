@@ -4,6 +4,11 @@
 
 .contato__wrapper {
   display: flex;
+  flex-wrap: wrap;
+
+  @include d(s) {
+    flex-direction: column;
+  }
 }
 
 .sobre {
@@ -16,13 +21,13 @@
 
   p {
     padding-top: 16px;
-    max-width: 416px;
+    max-width: 350px;
     font-size: rem(16);
   }
 
   h4 {
     padding-top: 40px;
-    padding-bottom: 20px;
+    padding-bottom: 16px;
     font-weight: 700;
     font-size: rem(24);
   }
@@ -51,6 +56,7 @@
   h3 {
     font-size: rem(36);
     font-weight: 700;
+    line-height: 140%;
   }
 }
 
@@ -66,8 +72,10 @@
   }
 
   p {
-    padding-top: 16px;
+    padding-top: 8px;
     font-size: rem(16);
+    line-height: 140%;
+
   }
 
   .sobre__historia {
@@ -77,12 +85,15 @@
 
 // IMG INTRO 
 
-.sobre__intro-img {
+.sobre__direita {
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
 
-  img {
-    width: 500px;
-    height: 500px;
+  .sobre__direita-img {
+    max-width: 500px;
+
   }
+
 
 }
