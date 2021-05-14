@@ -5,9 +5,12 @@
 .contato__wrapper {
   display: flex;
   flex-wrap: wrap;
+  align-content: flex-start;
 
   @include d(s) {
+    margin-bottom: 40px;
     flex-direction: column;
+
   }
 }
 
@@ -15,8 +18,14 @@
   padding-top: 16vh;
 
   h1 {
+
     font-family: $font-boska;
     font-size: rem(72);
+
+    @include d(s) {
+      padding-top: 3vh;
+      font-size: rem(48);
+    }
   }
 
   p {
@@ -26,15 +35,25 @@
   }
 
   h4 {
-    padding-top: 40px;
+    padding-top: 6vh;
     padding-bottom: 16px;
     font-weight: 700;
     font-size: rem(24);
+
+    @include d(s) {
+      padding-top: 32px;
+      font-size: rem(22);
+      padding-bottom: 8px;
+
+    }
   }
 
   span {
     font-weight: 500;
     font-size: rem(16);
+
+
+
   }
 
 
@@ -45,18 +64,32 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  max-width: 500px;
+  padding-top: 6vh;
+
+  @include d(s) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
   img {
     margin-right: 40px;
+    padding: 10px 0 0 0;
+
+    @include d(s) {
+      margin-right: 0;
+      padding: 0;
+    }
   }
 
   h3 {
-    font-size: rem(36);
+    font-size: rem(40);
     font-weight: 700;
-    line-height: 140%;
+    line-height: 130%;
+    max-width: 500px;
+
+    @include d(s) {
+      font-size: rem(24);
+    }
   }
 }
 
@@ -64,22 +97,35 @@
 .sobre__item {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding-top: 4vh;
+
+  @include d(s) {
+    padding-top: 24px;
+    flex-direction: column;
+  }
 
 
   h3 {
-    font-size: rem(24);
+    font-size: rem(18);
     font-weight: bold;
   }
 
   p {
     padding-top: 8px;
-    font-size: rem(16);
+    font-size: rem(14);
     line-height: 140%;
 
   }
 
   .sobre__historia {
     margin-right: 40px;
+
+    @include d(s) {
+      margin-right: 0;
+
+    }
+
   }
 }
 
@@ -88,10 +134,15 @@
 .sobre__direita {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+
 
   .sobre__direita-img {
     max-width: 500px;
+
+    img {
+      padding-top: 10px;
+      object-fit: cover;
+    }
 
   }
 
