@@ -157,13 +157,62 @@ a.menu__btn:hover {
   align-items: center;
   justify-content: space-between;
 
-  .cart,
+  .cart__img,
   .user {
     width: 30px;
   }
 
   .user {
     margin-right: 15px;
+  }
+
+  .cart {
+    position: relative;
+
+    .hoverCart {
+      background: #ffff;
+      position: absolute;
+      right: 0;
+      top: 50px;
+      display: flex;
+      justify-content: center;
+      width: 280px;
+      align-items: center;
+      border: 1px solid #000;
+      padding: 30px 10px;
+
+      .hoverCart__img {
+        img {
+          object-fit: cover;
+          margin-right: 16px;
+        }
+      }
+
+      .hoverCart__text {
+
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+          font-size: rem(22);
+        }
+
+        span {
+          padding-top: 8px;
+          font-size: rem(14);
+          color: $cor-laranja-3;
+        }
+
+        p {
+          padding-top: 20px;
+          color: $cor-laranja-2;
+          font-weight: bold;
+        }
+
+      }
+
+
+    }
   }
 
 }
