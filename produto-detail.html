@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="assets/css/style.comp.css">
     <link rel="stylesheet" href="assets/css/swiper.css">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
     <title>Multihair</title>
 
 </head>
@@ -19,8 +21,25 @@
 <body>
     <main id="page__produto-detail">
 
+        <section class="detail">
+            <div class="container">
+                <div class="detail__wrapper">
+                    <div class="col-lg-6 galeria">
+                        <a data-fancybox="gallery" href="#">
+                            <img src="assets/img/foto__cabelos.jpg"></a>
 
-        <div class="relacionados">
+                        <a data-fancybox="gallery" href="#">
+                            <img src="assets/img/foto__cabelos.jpg"></a>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+        <section class="relacionados">
             <div class="relacionados__wrapper">
 
                 <section class="produtos" id="produtos">
@@ -302,7 +321,7 @@
 
             </div>
 
-        </div>
+        </section>
 
 
         <footer class="footer">
@@ -464,9 +483,11 @@
     <script type="text/javascript" src="assets/js/jquery.zoom.min.js"></script>
 
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
-
+    <!-- <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script>
+
+        
         //zoom img cards
         const quebra = window.matchMedia('(max-width: 1024px)').matches
         if (!quebra) {
