@@ -7,11 +7,12 @@
   flex-wrap: wrap;
   align-content: flex-start;
 
-  @include d(s) {
-    margin-bottom: 40px;
+  @include d(m) {
     flex-direction: column;
-
+    margin-bottom: 40px;
   }
+
+
 }
 
 .sobre {
@@ -22,10 +23,12 @@
     font-family: $font-boska;
     font-size: rem(72);
 
+
     @include d(s) {
-      padding-top: 3vh;
+      padding-top: 2vh;
       font-size: rem(48);
     }
+
   }
 
   p {
@@ -51,9 +54,6 @@
   span {
     font-weight: 500;
     font-size: rem(16);
-
-
-
   }
 
 
@@ -66,20 +66,24 @@
   align-items: center;
   padding-top: 6vh;
 
-  @include d(s) {
-    flex-direction: column;
-    align-items: flex-start;
+  @include d(m) {
+    padding-top: 4vh;
+    align-items: center;
+    justify-content: flex-start;
   }
-
-
 
   img {
     margin-right: 40px;
     padding: 10px 0 0 0;
 
-    @include d(s) {
-      margin-right: 0;
+    @include d(m) {
       padding: 0;
+    }
+
+    @include d(s) {
+      margin-right: 20px;
+      padding: 0;
+      width: 80px;
     }
   }
 
@@ -90,7 +94,7 @@
     max-width: 500px;
 
     @include d(s) {
-      font-size: rem(24);
+      font-size: rem(22);
     }
   }
 }
@@ -102,17 +106,30 @@
   justify-content: space-between;
   padding-top: 4vh;
 
+  @include d(m) {
+    flex-direction: column;
+    align-items: flex-start;
+
+
+  }
+
   @include d(s) {
+
     padding-top: 24px;
     flex-direction: column;
   }
 
-
-
-
   h3 {
     font-size: rem(18);
     font-weight: bold;
+
+    @include d(m) {
+      font-size: rem(32);
+    }
+
+    @include d(s) {
+      font-size: rem(18);
+    }
   }
 
   p {
@@ -120,16 +137,36 @@
     font-size: rem(14);
     line-height: 140%;
 
+
+    @include d(m) {
+      font-size: rem(18);
+    }
+
+    @include d(s) {
+      font-size: rem(14);
+    }
+
+
   }
 
   .sobre__historia {
     margin-right: 40px;
+
+    @include d(m) {
+      margin-right: 0;
+    }
 
     @include d(s) {
       margin-right: 0;
 
     }
 
+  }
+
+  .sobre__visao {
+    @include d(s) {
+      margin-top: 20px;
+    }
   }
 }
 
@@ -139,10 +176,24 @@
   display: flex;
   justify-content: flex-end;
 
+  @include d(m) {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+
+  @include d(s) {
+    margin-top: 20px;
+  }
+
 
 
   .sobre__direita-img {
     max-width: 500px;
+
+    @include d(s) {
+      max-width: 100%;
+    }
 
     img {
       padding-top: 10px;
@@ -152,4 +203,14 @@
   }
 
 
+}
+
+
+.footer {
+  background: #f3f3f3;
+  margin-top: 120px;
+
+  @include d(m) {
+    margin-top: 60px;
+  }
 }
