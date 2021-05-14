@@ -10,7 +10,7 @@ $component-name:#{"produtos"};
 
     .title {
         @include titulosPrincipais(false);
-        margin-bottom: 30px
+        margin-bottom: 0px
     }
 
     .produtos {
