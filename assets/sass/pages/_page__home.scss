@@ -315,9 +315,6 @@ $component-name:"produtos";
 
 }
 
-& {
-  height: 5000px;
-}
 
 //carousel de produtos mobile
 .produtos__container-2 {
@@ -503,6 +500,12 @@ $component-name:"produtos";
     height: 700px;
     z-index: 1;
     opacity: .7;
+
+    @include d(s) {
+      opacity: .5;
+      width: 400px;
+      height: 600px;
+    }
   }
 
 
@@ -513,9 +516,18 @@ $component-name:"produtos";
 .sobre {
   &__wrapper {
     display: flex;
+
+    @include d(m) {
+      flex-wrap: wrap;
+    }
   }
 
   &__texto {
+    @include d(m) {
+      padding: 0 !important;
+
+    }
+
     h1 {
       font-size: 120px;
       font-family: $font-boska;
@@ -523,6 +535,12 @@ $component-name:"produtos";
       z-index: 2;
       position: relative;
       margin-bottom: 80px;
+
+      @include d(m) {
+        line-height: 97%;
+        font-size: 72px;
+        margin-bottom: 40px;
+      }
     }
 
     p {
@@ -534,11 +552,19 @@ $component-name:"produtos";
       letter-spacing: .3px;
       font-weight: 500;
 
+      @include d(s) {
+        font-size: 14px;
+      }
+
     }
   }
 
   .btn {
     z-index: 2;
+
+    @include d(m) {
+      margin-bottom: 40px;
+    }
   }
 
   p,
@@ -546,6 +572,12 @@ $component-name:"produtos";
     margin-left: 80px;
   }
 
+  &__img {
+    @include d(m) {
+      display: none;
+    }
+
+  }
 
 
 }
@@ -570,17 +602,28 @@ $component-name:"produtos";
     background-color: rgba(0, 0, 0, .1);
     height: 1px;
     margin-top: 120px;
+
+    @include d(s) {
+      margin-top: 60px;
+    }
   }
 }
 
 
 
 .news {
+
   background: white;
   padding: 20px 20px;
-  border: 1px solid rgba(208, 126, 126, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   margin-top: 40px;
+
+  @include d(m) {
+    max-width: 300px;
+    padding: 20px 20px;
+    @include center;
+  }
 
   &__wrapper {
     display: grid;
@@ -588,13 +631,29 @@ $component-name:"produtos";
     grid-template-columns: 1fr 1fr 1fr 1fr 120px;
     gap: 15px;
 
+    @include d(m) {
+      display: flex;
+      flex-direction: column;
+    }
+
     >p {
       font-weight: bold;
+
+      @include d(m) {
+        width: 100%;
+        font-size: 20px;
+      }
     }
-    >input{
+
+    >input {
       padding: 12px 20px;
       border: 1px solid $cor-cinza-1;
       border-radius: 4px;
+
+      @include d(m) {
+        width: 100%;
+      }
+
     }
   }
 
@@ -602,11 +661,21 @@ $component-name:"produtos";
     width: 120px;
     margin: initial;
 
+    @include d(m) {
+      width: 100%;
+    }
+
     .btn {
       margin: initial;
+
+      @include d(m) {
+        width: 100%;
+        max-width: 100%;
+        flex-grow: 1;
+      }
     }
   }
-  
+
 }
 
 
