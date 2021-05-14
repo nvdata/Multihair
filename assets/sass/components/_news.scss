@@ -22,8 +22,8 @@
         grid-gap: 15px;
 
         @include d(m) {
-            display: flex;
-            flex-direction: column;
+            display: grid;
+            grid-template-columns: 1fr ;
         }
 
         >p {
