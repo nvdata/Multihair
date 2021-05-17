@@ -10,7 +10,6 @@ import Dom from './modules/constructors.js'; //selecionar elementos
 import menu from './modules/menu.js'; //js do menu
 import popUpCart from './modules/popup-cart.js'; //Popup
 import initDropdownMenu from './modules/dropdown-menu.js'; //Dropdown
-import swiperGaleria from './modules/swiperGaleria.js'; // galeria d edetalhes
 
 
 menu();
@@ -57,17 +56,29 @@ if (pageHome) { // ★ HOME
         new Swiper(".produtos__container", config.props)
     }
 
-} else if (pageProdutoDetail) { // ★ Detalhes do Produto
+} else if (pageProdutoDetail) { // ★ Novos Produtos
     new Dom().bodyClass("body__produto-detail");
     new Swiper(".produtos__container", config.propsDepo)
+
+    //previne click galeria no mobile
+    const swipergallery = new Swiper(".swiper__container-gallery", config.propsGallery)
+    const hero = document.querySelector(".gallery__hero")
+
+    hero.addEventListener("touchstart", prevent)
+    hero.addEventListener("touchend", enable)
+
+    function prevent() {
+        swipergallery.enabled = false
+    }
+
+    function enable() {
+        swipergallery.enabled = true
+    }
 
     // accordeon
     initAccordion()
 
-    //swiper co previne click do mobile
-    swiperGaleria()
 } else if (pageCarrinho) {
     new Dom().bodyClass("body__carrinho");
 
 }
-

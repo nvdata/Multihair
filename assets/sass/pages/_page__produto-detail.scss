@@ -1,5 +1,324 @@
 @import "../components/cards";
 @import "../components/paginacao";
+@import "../components/galeria";
+@import "../components/accordion";
+
+
+
+
+//AJUSTES GALERIA
+.detail {
+    .gallery {
+        width: 400px;
+        margin: 0 auto;
+        overflow: hidden;
+
+        @include d(s) {
+            width: 290px;
+
+        }
+
+        &__thumbs {
+            @include d(s) {
+                height: 50px;
+
+                img {
+                    height: 100%;
+                    margin: 0 auto;
+                }
+
+            }
+        }
+
+        &__hero {
+            height: 400px !important;
+            width: 400px;
+            margin: 0 auto 15px;
+            border: 1px solid #dbdbdb8a;
+            border-radius: 4px;
+
+            @include d(s) {
+                height: 240px !important;
+                width: 290px;
+
+            }
+
+            img {
+                object-fit: contain !important;
+
+                &:hover {
+                    cursor: zoom-in;
+                }
+
+            }
+
+            img:not([role="presentation"]) {
+                height: 100%;
+                margin: 0 auto
+            }
+        }
+    }
+}
+
+//DETALHES DO PRODUTO 
+.detail {
+    margin-top: 130px;
+
+    @include d(s) {
+        margin-top: 100px;
+
+    }
+
+    .infos {
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__wrapper {
+        display: flex;
+
+        @include d(m) {
+            flex-direction: column;
+
+        }
+    }
+
+    //WRAPPERS
+    .preco,
+    .carts,
+    .tamanho,
+    .frete {
+        &__wrapper {
+            display: flex;
+        }
+    }
+
+    //REFERENCIA PRODUTO
+    .ref {
+        font-size: 12px;
+        margin-bottom: 10px;
+        display: inline-block;
+        color: $cor-cinza-2;
+
+        @include d(s) {
+            font-size: 10px;
+            margin-top: 10px;
+        }
+
+    }
+
+    //TITULO PRODUTO
+    .title {
+        font-size: 26px;
+        font-weight: 600;
+        margin-bottom: 20px;
+
+        @include d(s) {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+    }
+
+    //PRECO
+    .preco__wrapper {
+        align-items: center;
+        margin-bottom: 20px;
+
+        @include d(s) {
+            margin-bottom: 15px;
+        }
+
+        span+span {
+            margin-left: 30px;
+        }
+
+        .preco {
+            font-size: 32px;
+            font-weight: 600;
+
+            @include d(s) {
+                font-size: 28px;
+            }
+        }
+
+        .desc {
+            color: $cor-cinza-2;
+            text-decoration: line-through;
+            font-weight: 600;
+            font-size: 20px;
+
+            @include d(s) {
+                font-size: 18px;
+            }
+        }
+    }
+
+    //SEM JUROS
+    .sjuros {
+        font-weight: 700;
+        color: $cor-verde-1;
+        margin-bottom: 20px;
+
+        @include d(s) {
+            margin-bottom: 10px;
+            font-size: 12px;
+        }
+    }
+
+    //cartoes
+    .carts__wrapper {
+        align-items: flex-end;
+        margin-bottom: 20px;
+
+        img {
+            height: 20px;
+        }
+
+    
+
+        a:last-child {
+            margin-left: 15px;
+            color: $cor-azul-1;
+            text-decoration: underline;
+
+            @include d(s) {
+                font-size: 12px;
+            }
+        }
+    }
+
+    //tamanho
+    .tamanho__wrapper {
+        margin-bottom: 20px;
+        align-items: center;
+        margin-top: 40px;
+
+        @include d(s) {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .select__container {
+            position: relative;
+            height: 35px;
+            width: 300px;
+
+            select {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+                border: 1px solid $cor-cinza-2;
+                border-radius: 4px;
+                padding: 0 10px;
+                color: $cor-cinza-2;
+            }
+        }
+
+        >a {
+            margin-left: 15px;
+            text-decoration: underline;
+            font-weight: 600;
+            color: $cor-cinza-2;
+            font-size: 14px;
+
+            @include d(s) {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .btn__container {
+        width: 100%;
+        @include botaoMult;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+
+        .btn {
+            background: $cor-preto-1;
+            color: white;
+            max-width: 500px;
+            flex-grow: 1;
+            width: 100%;
+            font-family: $font-raleway;
+            cursor: pointer;
+
+            @include d(s) {
+                margin-top: 10px !important;
+            }
+
+            &:hover {
+                background: $cor-laranja;
+            }
+
+        }
+
+        //botao compartilhar 
+        .comp {
+            margin-top: 15px;
+            text-align: center;
+            display: inline-flex;
+            width: 100%;
+            justify-content: center;
+            max-width: 500px;
+            align-items: center;
+            font-weight: 500;
+            color: $cor-cinza-2;
+            transition: color .3s ease;
+
+            &:hover {
+                color: $cor-laranja;
+            }
+
+            ion-icon {
+                margin-left: 10px;
+                font-size: 20px;
+            }
+        }
+    }
+
+    //frete
+    .frete__wrapper {
+        align-items: center;
+        justify-content: space-between;
+
+        p {
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        >input {
+            margin-left: 20px;
+            height: 35px;
+            width: 300px;
+            padding: 0 10px;
+            border: 1px solid $cor-cinza-2;
+            border-radius: 4px;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 $component-name:#{"produtos"};
@@ -18,7 +337,7 @@ $component-name:#{"produtos"};
         position: relative;
 
         &__card {
-            box-shadow: $shadow-card-normal;
+            box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1) !important;
         }
 
         &__container {
@@ -113,6 +432,8 @@ $component-name:#{"produtos"};
 
 
 }
+
+
 
 .paginacao {
     margin-top: 60px;

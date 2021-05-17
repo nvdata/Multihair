@@ -28,11 +28,128 @@
             <div class="container">
                 <div class="detail__wrapper">
                     <div class="col-lg-6 galeria">
-                        <a data-fancybox="gallery" href="#">
-                            <img src="assets/img/foto__cabelos.jpg"></a>
+                        <!-- Gallery -->
+                        <div id="js-gallery" class="gallery swiper__container-gallery">
+                            <!--Gallery Hero-->
+                            <div class="gallery__hero">
+                                <img src="assets/img/cabelo-1.png">
+                            </div>
 
-                        <a data-fancybox="gallery" href="#">
-                            <img src="assets/img/foto__cabelos.jpg"></a>
+                            <!--Gallery Thumbs-->
+                            <div class="gallery__thumbs swiper-wrapper">
+                                <!-- link imagem -->
+                                <a class="swiper-slide" href="assets/img/cabelo-1.png" data-gallery="thumb"
+                                    class="is-active">
+                                    <!-- thumb -->
+                                    <img src="assets/img/cabelo-1.png">
+
+                                </a>
+
+                                <a class="swiper-slide" href="assets/img/cabelo-4.png" data-gallery="thumb">
+                                    <img src="assets/img/cabelo-4.png">
+                                </a>
+                                <a class="swiper-slide" href="assets/img/cabelo-5.png" data-gallery="thumb">
+                                    <img src="assets/img/cabelo-5.png">
+                                </a>
+                                <a class="swiper-slide" href="assets/img/cabelo-5.png" data-gallery="thumb">
+                                    <img src="assets/img/cabelo-5.png">
+                                </a>
+                                <a class="swiper-slide" href="assets/img/cabelo-5.png" data-gallery="thumb">
+                                    <img src="assets/img/cabelo-5.png">
+                                </a>
+                                <a class="swiper-slide" href="assets/img/cabelo-5.png" data-gallery="thumb">
+                                    <img src="assets/img/cabelo-5.png">
+                                </a>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 infos">
+                        <div class="infos__wrapper">
+                            <span class="ref">
+                                Ref 1234567GH
+                            </span>
+                            <h2 class="title">
+                                Cabelo Humano Natural 75 A
+                                80cm 1kg
+                            </h2>
+                            <div class="preco__wrapper">
+                                <span class="preco">
+                                    $1540,00
+                                </span>
+                                <span class="desc">
+                                    $234
+                                </span>
+                            </div>
+                            <div class="sjuros">
+                                4x de 600,00 sem juros
+                            </div>
+                            <div class="carts__wrapper">
+                                <img src="assets/img/carts.png" alt="cartoes">
+                                <a href="#">Formas de pagamento</a>
+                            </div>
+                            <div class="tamanho__wrapper">
+                                <div class="select__container">
+                                    <select name="tamanho" id="tamanho">
+                                        <option value="option-1">Tamanho P</option>
+                                        <option value="option-2">Tamanho M</option>
+                                        <option value="option-3">Tamanho G</option>
+                                    </select>
+                                </div>
+                                <a href="#">Guia de tamanho</a>
+
+                            </div>
+
+                            <div class="btn__container">
+                                <button class="btn" data-popupCart>Adicionar ao carrinho</button>
+                                <a class="comp" href="#">Compartilhar <ion-icon name="share-social-outline"></ion-icon>
+                                </a>
+                            </div>
+
+                            <div class="frete__wrapper">
+
+                                <p>Calcule o Frete</p>
+                                <input type="text" placeholder="CEP">
+                            </div>
+
+                            <dl data-accordion class="detalhes__produto">
+                                <!-- item  -->
+                                <div class="accordion__item">
+                                    <dt>Detalhes do produto
+                                        <ion-icon name="chevron-down-outline">
+                                        </ion-icon>
+                                    </dt>
+                                    <dd>
+                                        <div class="content">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa commodi eum
+                                            excepturi aliquid praesentium omnis reprehenderit sapiente iusto deserunt
+                                            nesciunt, quos ut ea et odio aut, deleniti distinctio voluptatibus porro?
+                                        </div>
+                                    </dd>
+                                </div>
+
+                            </dl>
+                            <dl data-accordion class="informa__produto">
+                                <!-- item  -->
+                                <div class="accordion__item">
+                                    <dt>Informacão
+                                        <ion-icon name="chevron-down-outline">
+                                        </ion-icon>
+                                    </dt>
+                                    <dd>
+                                        <div class="content">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa commodi eum
+                                            excepturi aliquid praesentium omnis reprehenderit sapiente iusto deserunt
+                                            nesciunt, quos ut ea et odio aut, deleniti distinctio voluptatibus porro?
+                                        </div>
+                                    </dd>
+                                </div>
+
+                            </dl>
+                        </div>
+
                     </div>
                 </div>
 
@@ -78,7 +195,7 @@
                                                     ou 4x de 600,00 sem juros
                                                 </p>
                                             </div>
-                                            <div class="produtos__desc-action">
+                                            <div class="produtos__desc-action" data-popupCart>
                                                 <svg width="27" height="24" viewBox="0 0 27 24" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -122,7 +239,7 @@
                                                     ou 4x de 600,00 sem juros
                                                 </p>
                                             </div>
-                                            <div class="produtos__desc-action">
+                                            <div class="produtos__desc-action" data-popupCart>
                                                 <svg width="27" height="24" viewBox="0 0 27 24" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -165,7 +282,7 @@
                                                     ou 4x de 600,00 sem juros
                                                 </p>
                                             </div>
-                                            <div class="produtos__desc-action">
+                                            <div class="produtos__desc-action" data-popupCart>
                                                 <svg width="27" height="24" viewBox="0 0 27 24" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -208,7 +325,7 @@
                                                     ou 4x de 600,00 sem juros
                                                 </p>
                                             </div>
-                                            <div class="produtos__desc-action">
+                                            <div class="produtos__desc-action" data-popupCart>
                                                 <svg width="27" height="24" viewBox="0 0 27 24" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -250,7 +367,7 @@
                                                     ou 4x de 600,00 sem juros
                                                 </p>
                                             </div>
-                                            <div class="produtos__desc-action">
+                                            <div class="produtos__desc-action" data-popupCart>
                                                 <svg width="27" height="24" viewBox="0 0 27 24" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -292,7 +409,7 @@
                                                     ou 4x de 600,00 sem juros
                                                 </p>
                                             </div>
-                                            <div class="produtos__desc-action">
+                                            <div class="produtos__desc-action" data-popupCart>
                                                 <svg width="27" height="24" viewBox="0 0 27 24" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -378,7 +495,6 @@
 
 
 
-
         <!--MENU DESKTOP-->
         <nav class="menu__desktop menu">
             <div class="container__menu">
@@ -389,18 +505,71 @@
 
                         <ul class="menu__links">
 
-                            <li class="menu__dropdown">
+                            <li data-dropdown>
 
                                 <a href="#">Categorias
                                     <ion-icon name="chevron-down-outline"></ion-icon>
                                 </a>
 
+                                <ul class="dropdown-menu">
 
-                                <div id="dropdown__content">
-                                    <a href="#">Item</a>
-                                    <a href="#">Item</a>
+                                    <li data-dropdown>
 
-                                </div>
+                                        <a href="#">Cabelos Naturais <ion-icon name="chevron-forward-outline">
+                                            </ion-icon></a>
+                                        <ul class="sub-dropdown-menu">
+                                            <li><a href="#">item 1</a></li>
+                                            <li><a href="#">item 2 item 2 item 2</a></li>
+                                            <li><a href="#">item 3</a></li>
+
+                                            <li data-dropdown>
+
+                                                <a href="#">item 4 item 4 item 4 item 4
+                                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                                </a>
+
+                                                <ul class="sub-dropdown-menu">
+                                                    <li><a href="#">item 1</a></li>
+                                                    <li><a href="#">item 2 item 2 item 2</a></li>
+                                                    <li><a href="#">item 3</a></li>
+                                                    <li data-dropdown>
+
+                                                        <a href="#">item 4 item 4 item 4 item 4 <ion-icon
+                                                                name="chevron-forward-outline">
+                                                            </ion-icon></a>
+
+                                                        <ul class="sub-dropdown-menu">
+                                                            <li><a href="#">item 1</a></li>
+                                                            <li><a href="#">item 2 item 2 item 2</a></li>
+                                                            <li><a href="#">item 3</a></li>
+                                                            <li data-dropdown>
+                                                                <a href="#">item 4 item 4 item 4 item 4</a>
+                                                            </li>
+                                                        </ul>
+
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+
+                                    </li>
+                                    <li data-dropdown>
+                                        <a href="#">Cabelos Sinteticos <ion-icon name="chevron-forward-outline">
+                                            </ion-icon></a>
+                                        <ul class="sub-dropdown-menu">
+                                            <li><a href="#">item 1</a></li>
+                                            <li><a href="#">item 2 item 2 item 2</a></li>
+                                            <li><a href="#">item 3</a></li>
+                                            <li data-dropdown>
+                                                <a href="#">item 4 item 4 item 4</a>
+                                            </li>
+                                        </ul>
+
+                                    </li>
+
+                                </ul>
+
+
                             </li>
 
                             <li><a href="#">Sobre nós</a></li>
@@ -412,20 +581,85 @@
                     <div class="menu__complemento">
                         <div class="menu__buscar">
                             <form>
-                                <input type="search" id="search" name="search" placeholder="Buscar">
+                                <input type="text" id="search" name="search" placeholder="Buscar">
 
                             </form>
                             <a class="lupa" href="#"><img src="./assets/img/MagnifyingGlass.svg"></a>
                         </div>
-                        <a class="user" href="#"><img src="./assets/img/User.svg"></a>
-
-                        <a class="cart" href="#">
-
-                            <img src="./assets/img/ShoppingCart.svg">
-
-
-
+                        <a class="user" href="#"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="cabeca"
+                                    d="M16 20C20.4183 20 24 16.4183 24 12C24 7.58172 20.4183 4 16 4C11.5817 4 8 7.58172 8 12C8 16.4183 11.5817 20 16 20Z"
+                                    stroke="#FF6C0E" stroke-width="2" stroke-miterlimit="10" />
+                                <path class="corpo"
+                                    d="M3.87354 26.9988C5.10299 24.8708 6.8708 23.1037 8.99939 21.8752C11.128 20.6467 13.5424 20 16.0001 20C18.4577 20 20.8721 20.6468 23.0007 21.8754C25.1292 23.1039 26.897 24.871 28.1264 26.9991"
+                                    stroke="#FF6C0E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
                         </a>
+                        <div class="cart" href="#">
+                            <span class="badge ativo">3</span>
+
+                            <div class="js-cart-popup">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M24 23H8.56185C8.32766 23 8.1009 22.9178 7.9211 22.7678C7.7413 22.6177 7.61987 22.4093 7.57797 22.1789L4.2402 3.82112C4.19831 3.5907 4.07688 3.3823 3.89708 3.23225C3.71728 3.08219 3.49052 3 3.25633 3H1"
+                                        stroke="#FF6C0E" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path class="roda"
+                                        d="M9 28C10.3807 28 11.5 26.8807 11.5 25.5C11.5 24.1193 10.3807 23 9 23C7.61929 23 6.5 24.1193 6.5 25.5C6.5 26.8807 7.61929 28 9 28Z"
+                                        stroke="#FF6C0E" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path class="roda"
+                                        d="M24 28C25.3807 28 26.5 26.8807 26.5 25.5C26.5 24.1193 25.3807 23 24 23C22.6193 23 21.5 24.1193 21.5 25.5C21.5 26.8807 22.6193 28 24 28Z"
+                                        stroke="#FF6C0E" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M5 8H26.8018C26.9483 8 27.0929 8.03218 27.2256 8.09425C27.3583 8.15633 27.4757 8.2468 27.5695 8.35925C27.6634 8.4717 27.7314 8.6034 27.7687 8.74504C27.8061 8.88667 27.8119 9.03478 27.7857 9.17889L26.1493 18.1789C26.1074 18.4093 25.986 18.6177 25.8062 18.7678C25.6264 18.9178 25.3996 19 25.1654 19H7"
+                                        stroke="#FF6C0E" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
+
+                            <div class="popup__cart-wrapper" id="popup__carinho-adicionado">
+                                <div class="popup__container">
+                                    <div class="popup__cart-item">
+                                        <div class="popup__js-cart-popup">
+                                            <img src="./assets/img/adicionado.jpg">
+                                        </div>
+                                        <div class="popup__cart-text">
+                                            <h2>Adicionado!</h2>
+                                            <span>Cabelo TANANA</span>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="popup__cart-item">
+                                        <div class="popup__js-cart-popup">
+                                            <img src="./assets/img/adicionado.jpg">
+                                        </div>
+                                        <div class="popup__cart-text">
+                                            <h2>Adicionado!</h2>
+                                            <span>Cabelo TANANA</span>
+
+                                        </div>
+                                    </div>
+                                    <div class="popup__cart-item">
+                                        <div class="popup__js-cart-popup">
+                                            <img src="./assets/img/adicionado.jpg">
+                                        </div>
+                                        <div class="popup__cart-text">
+                                            <h2>Adicionado!</h2>
+                                            <span>Cabelo TANANA</span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#">Ver Carrinho</a>
+                            </div>
+
+                        </div>
                     </div>
 
                 </div>
@@ -442,9 +676,13 @@
                         <img src="./assets/img/logo.svg" alt="logo"></a>
                     </a>
 
+                    <button class="cart">
+                        <span class="badge ativo">3</span>
+                        <img class="js-cart-popup" src="./assets/img/ShoppingCart.svg">
+                    </button>
                     <div class="menu__icon">
                         <div class="menu__icon-click">
-                            <p>MENU</p>
+                            <!-- <p>MENU</p> -->
                             <div class="hamburguer"><i></i></div>
                         </div>
                     </div>
@@ -479,27 +717,41 @@
     <!-- fim da main -->
 
 
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+        integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- script front -->
     <script type="module" src="assets/js/main.js"></script>
-
+    <!-- zoom jquery -->
     <script type="text/javascript" src="assets/js/jquery.zoom.min.js"></script>
+    <!-- galeria do produto -->
+    <script type="text/javascript" src="assets/js/galeria.js"></script>
+    <!-- icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
 
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script>
-
-
-
         //zoom img cards
         const quebra = window.matchMedia('(max-width: 1024px)').matches
+        const galleryhero = document.querySelector(".gallery__hero")
+        $(document).ready(function () {
+
+            $('.gallery__hero img')
+                .parent()
+                .zoom()
+                .on("touchstart")
+
+        });
         if (!quebra) {
             $(document).ready(function () {
+
                 $('.img__container img')
                     .css('display', 'block')
                     .parent()
-                    .zoom();
+                    .zoom()
             });
         }
     </script>

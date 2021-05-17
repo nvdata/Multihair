@@ -7,7 +7,7 @@ function popUpCart() {
 
     if (popUp) {
 
-        const botaoComprar = document.querySelectorAll(".produtos__card .produtos__desc-action")
+        const botaoComprar = document.querySelectorAll("[data-popupCart]")
         botaoComprar.forEach(i => i.addEventListener("click", mostraPopUp))
         // carrinhoMenu.addEventListener('click', mostraPopUp); //click para mostrar o popup
         popUp.addEventListener("mouseenter", clear)
@@ -29,9 +29,10 @@ function popUpCart() {
                         popUp.removeAttribute("style", "animation");
                     }, 200);
 
-                }, 800);
+                }, 900);
         }
 
+        //faz aparecer
         function mostraPopUp() {
             clearTimeout(initial)
             document.body.classList.add('popup__open');

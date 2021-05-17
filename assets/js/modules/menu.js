@@ -60,7 +60,7 @@ export default function menu() {
 
 
     //animação ao scrool TITULOS
-    const sections = document.querySelectorAll(".js__scroll");
+    const sections = document.querySelectorAll(".js-scroll");
 
     function animaScroll() {
         sections.forEach((section) => {
@@ -72,12 +72,11 @@ export default function menu() {
     }
     window.addEventListener("scroll", animaScroll)
 
-    // add classe DROP MOBILE 
-    const dropMobile = document.querySelectorAll(".menu__dropdown")
 
+    //dropdown
+    const dropMobile = document.querySelectorAll(".menu__dropdown-mobile")
     dropMobile.forEach((i) => {
-        i.addEventListener("click", function (event) {
-            event.preventDefault();
+        i.addEventListener("touchstart", () => {
             i.classList.toggle("abre")
         })
     })

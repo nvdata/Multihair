@@ -54,6 +54,10 @@
       max-width: 500px;
 
       h1 {
+        @include d(s) {
+          font-size: 52px;
+        }
+
         @include d(ss) {
           font-size: 36px;
         }
@@ -74,7 +78,7 @@
   .orna {
     &__1 {
       position: absolute;
-      right: 0;
+      right: -10vw;
       top: 0;
       width: auto;
       height: 100vh;
@@ -173,7 +177,13 @@
       height: 100%;
       display: flex;
       align-items: center;
-      max-width: calc(1400px / 2)
+      max-width: calc(1400px / 2);
+      padding: 0 30px;
+
+      @include d(ll) {
+
+        max-width: calc(1200px / 2);
+      }
     }
 
     .orna__1 {
@@ -209,7 +219,13 @@
       height: 100%;
       display: flex;
       align-items: center;
-      max-width: calc(1400px / 2)
+      max-width: calc(1400px / 2);
+      padding: 0 30px;
+
+      @include d(ll) {
+
+        max-width: calc(1200px / 2);
+      }
     }
   }
 
@@ -269,7 +285,7 @@ $component-name:"produtos";
   padding: 120px 0;
   position: relative;
   overflow: hidden;
-  
+
   @include cards; //include estilo dos cards
 
   @include d(s) {
@@ -394,6 +410,7 @@ $component-name:"produtos";
 
     @include d(m) {
       width: 300px;
+      font-size: 14px;
     }
   }
 
@@ -507,7 +524,7 @@ $component-name:"produtos";
     opacity: .7;
 
     @include d(s) {
-      opacity: .5;
+      opacity: .4;
       width: 400px;
       height: 600px;
     }
@@ -545,6 +562,10 @@ $component-name:"produtos";
         line-height: 97%;
         font-size: 72px;
         margin-bottom: 40px;
+      }
+
+      @include d(s) {
+        font-size: 52px;
       }
     }
 

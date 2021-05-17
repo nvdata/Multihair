@@ -35,7 +35,7 @@
             cursor: zoom-in;
 
             @include d(s) {
-                height: 230px;
+                height: 170px;
             }
 
             //plugin de zoom display none
@@ -190,6 +190,7 @@
             color: white;
             font-size: 14px;
             font-weight: 600;
+            z-index: 10;
 
         }
     }

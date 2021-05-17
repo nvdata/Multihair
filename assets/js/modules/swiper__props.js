@@ -183,6 +183,47 @@ const propsDepo = {
 
         1240: {
             slidesPerView: "auto",
+            spaceBetween: 30,
+            centeredSlides: false,
+
+        },
+    }
+}
+
+export
+const propsGallery = {
+    slidesPerView: 'auto',
+    spaceBetween: 30,
+    centeredSlides: false,
+
+    navigation: {
+        nextEl: botaoNext,
+        prevEl: botaoPrev,
+    },
+
+    breakpoints: {
+        320: {
+            slidesPerView: 2.6,
+            centeredSlides: false,
+            spaceBetween: 15,
+            freeMode:true,
+            
+
+        },
+        720: {
+            slidesPerView: "auto",
+            centeredSlides: false,
+            spaceBetween: 15,
+        },
+        1024: {
+            slidesPerView: "auto",
+            spaceBetween: 50,
+            centeredSlides: false,
+
+        },
+
+        1240: {
+            slidesPerView: 4.5,
             spaceBetween: 20,
             centeredSlides: false,
 

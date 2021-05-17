@@ -1,0 +1,32 @@
+@import "../components/carrinho";
+
+.carrinho {
+
+    &__header {
+        margin-top: 140px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 40px;
+      ;
+    }
+
+    &__item {
+        display: flex;
+        height: 90px;
+
+        // &:nth-child(odd) {
+        //     background: rgba(243, 243, 243, 0.596);
+        // }
+        border-bottom: 1px solid $cor-cinza-1;
+    }
+
+    &__qnt {
+        margin-left: auto;
+    }
+
+
+}

@@ -12,6 +12,7 @@
 @import "../sass/components/body"; //alterações no BODY
 @import "../sass/components/menu";
 @import "../sass/components/footer";
+@import "../sass/components/dropdown-menu";
 
 
 
@@ -35,6 +36,12 @@
 .body__produto-detail {
     @import "./pages/page__produto-detail";
 }
+
+.body__carrinho {
+    @import "./pages/page__carrinho";
+}
+
+
 
 
 
